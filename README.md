@@ -1,7 +1,7 @@
 # Ender-3
 I run a small print farm for my business, fordworks3D, LLC. It is currently made up of 4 Ender 3 Pros, and this is where you can find my project upgrades, Octoprint network setup, Marlin configurations, and more.
 
-| [![fordworks3D Logo](Images/fordworks3D.png)](https://www.etsy.com/shop/fordworks3D)| | [![Octoprint Logo](Images/Octoprint.png)](https://octoprint.org) |
+| [![fordworks3D Logo](Images/fordworks3D.png)](https://www.etsy.com/shop/fordworks3D) | [![Octoprint Logo](Images/octoprint.png)](https://octoprint.org) |
 
 ## Parts List
 These are the things I buy when I want to add another printer to the line. Things not included are JST connectors, solder, wire, filament, labels, and other supplies. This list is ordered by priority of what I personally feel are the most to least essential upgrades to your Ender 3. In total, each printer costs me approximately $400.
