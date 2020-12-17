@@ -10,17 +10,17 @@ I run a small print farm for my business, fordworks3D, LLC. It is currently made
 
 
 ## Parts List
-These are the things I buy when I want to add another printer to the line. Things not included are JST connectors, solder, wire, filament, labels, and other supplies. This list is ordered by priority of what I personally feel are the most to least essential upgrades to your Ender 3. In total, each printer costs ~$400.
+These are the things I buy when I want to add another printer to the line. Things not included are JST connectors, solder, wire, filament, labels, and other supplies. This list is ordered by priority of what I personally feel are the most to least essential upgrades to your Ender 3. In total, each printer costs ~$700.
 | Type | Item | Price |
 |--|--|--|
-| 3D Printer | [Creality Ender 3 Pro](https://www.creality3dofficial.com/products/creality-ender-3-pro-3d-printer) | $209 |
+| 3D Printer | [Creality Ender 3 Pro](https://www.creality3dofficial.com/products/creality-ender-3-pro-3d-printer) | $249 |
+| Control Board | [BIGTREETECH SKR Mini E3 V2.0](https://www.biqu.equipment/products/bigtreetech-skr-mini-e3-v2-0-32-bit-control-board-integrated-tmc2209-uart-for-ender-3) | $35 |
 | Build Plate | [220mm x 220mm x 3mm Borosilicate Glass Bed](https://www.amazon.com/s?k=220mm+borosilicate+glass+bed) | $20 |
-| PTFE Tubing | [Capricorn Authentic PTFE Tubing for 1.75mm Filament](https://www.amazon.com/Authentic-Capricorn-Filament-Upgraded-Pneumatic/dp/B07PS3NH82/ref=sr_1_6?dchild=1&keywords=capricorn+ptfe&qid=1608003040&sr=8-6) | $15 |
-| Extruder Block | [All-Metal Aluminum Extruder Block for 1.75mm Bowden](https://www.amazon.com/gp/product/B07B96QMN2/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1) | $11 |
-| Leveling Probe | [Capacitive Proximity Sensor, DC 6-36V, 1-10mm, NPN NO](https://www.amazon.com/gp/product/B0746FYF5S/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) | $11 |
-| Heater Block | [Volcano Heater Block](https://www.amazon.com/s?k=volcano+heat+block&ref=nb_sb_noss_1) | $10 |
-| Silicone Sock | [Silicone Heater Block Sock](https://www.amazon.com/s?k=volcano+heat+block+sock&ref=nb_sb_noss) | $10 |
-| Octoprint Host | [Raspberry Pi 4 B, 4GB RAM with Heatsinks and Power Supply](https://vilros.com/collections/raspberry-pi-4/products/raspberry-pi-4-4gb-ram) | $60 |
+| Extruder | [E3D Hemera](https://e3d-online.com/collections/hotends/products/e3d-hemera-direct-kit-1-75mm) | $110 |
+| Leveling Probe | [Differential IR Height Sensing Probe](https://www.amazon.com/gp/product/B07RKTQ53F/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1) | $16 |
+| Cooling Fans | [24V Brushless High Speed Radial Fans](https://www.amazon.com/WINSINN-Bearing-50x50x15mm-Extruder-Makerbot/dp/B07DB7DLMM/ref=sr_1_4?dchild=1&keywords=radial+fan+24v+3d+printing&qid=1608193216&sr=8-4) | $10 |
+| Hotend | [E3D Supervolcano Kit with Extra Nozzles](https://e3d-online.com/collections/hotends/products/supervolcano-upgrade-kit) | $117 |
+| Octoprint Host | [Raspberry Pi 4 B, 4GB RAM with Heatsinks and Power Supply](https://vilros.com/collections/raspberry-pi-4/products/raspberry-pi-4-4gb-ram) | $78 |
 | Mini USB | [USB Type A to Mini B Cable, 3ft](https://www.amazon.com/s?k=Mini+usb+cable&ref=nb_sb_noss_2) | $10 |
 | Camera | [Raspberry Pi Camera, 1080p, 5MP](https://www.amazon.com/s?k=raspberry+pi+cam&ref=nb_sb_noss) | $10 |
 | Smart Outlet | [Wemo Mini Smart Outlet](https://www.bestbuy.com/site/wemo-mini-wifi-smart-plug-white/5711458.p?skuId=5711458&ref=212&loc=1) | $20 |

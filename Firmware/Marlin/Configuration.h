@@ -507,8 +507,8 @@
 #define PID_K1 0.95      // Smoothing factor within any PID loop
 
 #if ENABLED(PIDTEMP)
-  //#define PID_EDIT_MENU         // Add PID editing to the "Advanced Settings" menu. (~700 bytes of PROGMEM)
-  //#define PID_AUTOTUNE_MENU     // Add PID auto-tuning to the "Advanced Settings" menu. (~250 bytes of PROGMEM)
+  #define PID_EDIT_MENU         // Add PID editing to the "Advanced Settings" menu. (~700 bytes of PROGMEM)
+  #define PID_AUTOTUNE_MENU     // Add PID auto-tuning to the "Advanced Settings" menu. (~250 bytes of PROGMEM)
   //#define PID_PARAMS_PER_HOTEND // Uses separate PID parameters for each extruder (useful for mismatched extruders)
                                   // Set/get with gcode: M301 E[extruder number, 0-2]
 
@@ -520,9 +520,16 @@
     #define DEFAULT_Ki_LIST {   1.54,   1.54 }
     #define DEFAULT_Kd_LIST {  76.55,  76.55 }
   #else
-    #define DEFAULT_Kp  21.73
-    #define DEFAULT_Ki   1.54
-    #define DEFAULT_Kd  76.55
+    #if PRINTER_NUMBER == 4
+      // 12-17-2020 E3D Volcano with Kapton Sock
+      #define DEFAULT_Kp  36.15
+      #define DEFAULT_Ki   4.14
+      #define DEFAULT_Kd  78.96
+    #else
+      #define DEFAULT_Kp  21.73
+      #define DEFAULT_Ki   1.54
+      #define DEFAULT_Kd  76.55
+    #endif
   #endif
 #endif // PIDTEMP
 
@@ -543,7 +550,7 @@
  * heater. If your configuration is significantly different than this and you don't understand
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  */
-//#define PIDTEMPBED
+#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
@@ -559,10 +566,16 @@
   //#define MIN_BED_POWER 0
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
-  // Creality Ender-3 Pro
-  #define DEFAULT_bedKp 50.71
-  #define DEFAULT_bedKi 9.88
-  #define DEFAULT_bedKd 173.43
+  #if PRINTER_NUMBER==4 // Last tuned 12-16-2020
+    #define DEFAULT_bedKp 212.50
+    #define DEFAULT_bedKi 35.34
+    #define DEFAULT_bedKd 851.79
+  #else
+    // Creality Ender-3 Pro
+    #define DEFAULT_bedKp 50.71
+    #define DEFAULT_bedKi 9.88
+    #define DEFAULT_bedKd 173.43
+  #endif
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -861,18 +874,12 @@
  * The probe replaces the Z-MIN endstop and is used for Z homing.
  * (Automatically enables USE_PROBE_FOR_Z_HOMING.)
  */
+//#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
-
-#if PRINTER_NUMBER == 1
-  #define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
-#elif PRINTER_NUMBER == 2
+#if PRINTER_NUMBER == 2
   #define USE_PROBE_FOR_Z_HOMING
 #elif PRINTER_NUMBER == 3
-  #define USE_PROBE_FOR_Z_HOMING
-#elif PRINTER_NUMBER == 4
-  #define USE_PROBE_FOR_Z_HOMING
-#else
-  #define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+  #define USE_PROBE_FOR_Z_HOMING  
 #endif
 
 
@@ -906,8 +913,6 @@
 #if PRINTER_NUMBER == 2
   #define BLTOUCH           // BLTouch Clone
 #elif PRINTER_NUMBER == 3
-  #define BLTOUCH           // BLTouch Clone
-#elif PRINTER_NUMBER == 4
   #define BLTOUCH           // BLTouch Clone
 #endif
 
@@ -1033,8 +1038,6 @@
 #if PRINTER_NUMBER == 2
   #define NOZZLE_TO_PROBE_OFFSET { -39.5, -7.2, -2.625 }    // BLTouch Clone
 #elif PRINTER_NUMBER == 3
-  #define NOZZLE_TO_PROBE_OFFSET { -39.5, -7.2, -2.625 }    // BLTouch Clone
-#elif PRINTER_NUMBER == 4
   #define NOZZLE_TO_PROBE_OFFSET { -39.5, -7.2, -2.625 }    // BLTouch Clone
 #else
   #define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
@@ -1163,7 +1166,9 @@
 //#define Z_HOMING_HEIGHT  4      // (mm) Minimal Z height before homing (G28) for Z clearance above the bed, clamps, ...
                                   // Be sure to have this much clearance over your Z_MAX_POS to prevent grinding.
 
-//#define Z_AFTER_HOMING  10      // (mm) Height to move to after homing Z
+#if PRINTER_NUMBER == 4
+  #define Z_AFTER_HOMING  10      // (mm) Height to move to after homing Z
+#endif
 
 // Direction of endstops when homing; 1=MAX, -1=MIN
 // :[-1,1]
@@ -1292,7 +1297,7 @@
 #elif PRINTER_NUMBER == 3
   #define AUTO_BED_LEVELING_3POINT
 #elif PRINTER_NUMBER == 4
-  #define AUTO_BED_LEVELING_3POINT
+  #define MESH_BED_LEVELING
 #else
   //#define AUTO_BED_LEVELING_3POINT
   //#define AUTO_BED_LEVELING_LINEAR
@@ -1404,7 +1409,7 @@
  * Add a bed leveling sub-menu for ABL or MBL.
  * Include a guided procedure if manual probing is enabled.
  */
-//#define LCD_BED_LEVELING
+#define LCD_BED_LEVELING
 
 #if ENABLED(LCD_BED_LEVELING)
   #define MESH_EDIT_Z_STEP  0.025 // (mm) Step size while manually probing Z axis.
@@ -1451,8 +1456,6 @@
 #if PRINTER_NUMBER == 2
   #define Z_SAFE_HOMING
 #elif PRINTER_NUMBER == 3
-  #define Z_SAFE_HOMING
-#elif PRINTER_NUMBER == 4
   #define Z_SAFE_HOMING
 #endif
 
