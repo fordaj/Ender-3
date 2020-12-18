@@ -7,7 +7,12 @@ PID auto-tuning for the hotend can be run with M303 from host software (pronterf
 ```gcode
 M303 E0 S260    ; Auto-tune PID values for hotend with 5 cycles 0C to 260C
 ```
-M301 P21.21 I2.31 D48.64
+After completion, be sure to copy the new values into Configuration.h. The values can be saved to the printer without rebuilding firmware:
+```gcode
+M301 P24.76 I1.91 D80.16  ; Write new PID values to EEPROM
+M500                        ; Store settings
+M501                        ; Load settings
+```
 Common issues:
 1. **No silicone sock on the heater block**: Since the Ender 3 fan blows onto the entire hotend, it prevents the heater block from reaching temperature.
 2. **Faulty thermistor/connection/wrong thermistor number in Marlin**: The temperature varies wildly.
@@ -17,11 +22,11 @@ Common issues:
 ### Bed
 PID auto-tuning for the bed can be run with an M304:
 ```gcode
-M303 E-1 S60    ; Auto-tune PID values for bed with 5 cycles 0C to 60C
+M303 E-1 S80    ; Auto-tune PID values for bed with 5 cycles 0C to 60C
 ```
-Be sure to write the new values in Configuration.h. The values can be saved to EEPROM without rebuilding Marlin with M304:
+After completion, be sure to copy the new values into Configuration.h. The values can be saved to the printer without rebuilding firmware:
 ```gcode
-M304 P212.5 I35.34 D851.79  ; Write PID values to bed PID EEPROM
+M304 P99.85 I11.14 D596.73  ; Write new PID values to EEPROM
 M500                        ; Store settings
 M501                        ; Load settings
 ```
