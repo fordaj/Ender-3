@@ -522,9 +522,9 @@
   #else
     #if PRINTER_NUMBER == 2
       // 12-25-2020 Winsin volcano block, 0.4mm nozzle clone, sock clone, Satsana fan shroud @ 220C
-      #define DEFAULT_Kp 26.45
-      #define DEFAULT_Ki 2.50
-      #define DEFAULT_Kd 69.97
+      #define DEFAULT_Kp 25.28
+      #define DEFAULT_Ki 2.34
+      #define DEFAULT_Kd 68.41
     #elif PRINTER_NUMBER == 4
       // 12-17-2020 E3D Volcano, 1.2mm E3D nozzle, Kapton sock, stock fan setup @ 260C
       #define DEFAULT_Kp  36.15
@@ -571,11 +571,11 @@
   //#define MIN_BED_POWER 0
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
-  #if PRINTER_NUMBER==2 // 12-16-2020 with 3mm borosilicate glass
-    #define DEFAULT_bedKp 110.07
-    #define DEFAULT_bedKi  21.45
-    #define DEFAULT_bedKd 376.49
-  #elif PRINTER_NUMBER==4 // 12-16-2020 with 5mm borosilicate glass
+  #if PRINTER_NUMBER == 2 // 12-25-2020 15 cycles at 60C with 3mm borosilicate glass
+    #define DEFAULT_bedKp 24.40
+    #define DEFAULT_bedKi 4.06
+    #define DEFAULT_bedKd 97.82
+  #elif PRINTER_NUMBER == 4 // 12-16-2020 with 5mm borosilicate glass
     #define DEFAULT_bedKp 212.50
     #define DEFAULT_bedKi 35.34
     #define DEFAULT_bedKd 851.79
