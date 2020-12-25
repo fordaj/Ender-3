@@ -53,3 +53,9 @@ M500     ; Store settings
 M501     ; Load settings
 ```
 8. Repeat steps 3-7 until the length_remaining is 20mm
+
+## Linear Advance
+Print [linearAdvance](linearAdvance.gcode) from Marlin's linear advance [gcode generator](https://marlinfw.org/tools/lin_advance/k-factor.html). The value next to the line which looks best can be saved in [Configuration_adv.h](https://github.com/fordaj/Ender-3/blob/main/Firmware/Marlin/Configuration_adv.h)
+```cpp
+#define LIN_ADVANCE_K 0.3    // Unit: mm compression per 1mm/s extruder speed
+```
