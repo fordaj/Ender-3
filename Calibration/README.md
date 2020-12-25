@@ -3,13 +3,13 @@
 ## PID Tuning
 Any changes affecting the thermals of the printer should be followed with appropriate PID tuning. Installing a new glass bed, new heat break, fans, nozzle material, etc. all impact the printer's heating rates.
 ### Hotend
-PID auto-tuning for the hotend can be run with M303 from host software (pronterface, octoprint, etc). For accurate results, run at least 10 cycles with the average of all temperatures you expect to print at:
+PID auto-tuning for the hotend can be run with M303 from host software (pronterface, octoprint, etc). For accurate results, run 15 cycles with the average of all temperatures you expect to print at for accurate results:
 ```gcode
-M303 E0 S260 C10   ; Auto-tune PID values for hotend with 10 cycles 0C to 260C
+M303 E0 S260 C15   ; Auto-tune PID values for hotend with 10 cycles 0C to 260C
 ```
 After completion, be sure to copy the new values into Configuration.h. The values can be saved to the printer without rebuilding firmware:
 ```gcode
-M301 P24.76 I1.91 D80.16  ; Write new PID values to EEPROM
+M301 P24.76 I1.91 D80.16    ; Write new PID values to EEPROM
 M500                        ; Store settings
 M501                        ; Load settings
 ```
@@ -22,7 +22,7 @@ Common issues:
 ### Bed
 PID auto-tuning for the bed can be run with an M304:
 ```gcode
-M303 E-1 S60    ; Auto-tune PID values for bed with 5 cycles 0C to 60C
+M303 E-1 S60 C15   ; Auto-tune PID values for bed with 5 cycles 0C to 60C
 ```
 After completion, be sure to copy the new values into Configuration.h. The values can be saved to the printer without rebuilding firmware:
 ```gcode
