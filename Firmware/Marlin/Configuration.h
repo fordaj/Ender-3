@@ -575,7 +575,7 @@
     #define DEFAULT_bedKp 110.07
     #define DEFAULT_bedKi  21.45
     #define DEFAULT_bedKd 376.49
-  #if PRINTER_NUMBER==4 // 12-16-2020 with 5mm borosilicate glass
+  #elif PRINTER_NUMBER==4 // 12-16-2020 with 5mm borosilicate glass
     #define DEFAULT_bedKp 212.50
     #define DEFAULT_bedKi 35.34
     #define DEFAULT_bedKd 851.79
