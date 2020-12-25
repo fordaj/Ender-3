@@ -434,7 +434,7 @@
 #if PRINTER_NUMBER == 1
   #define TEMP_SENSOR_0 1   // Stock thermistor
 #elif PRINTER_NUMBER == 2
-  #define TEMP_SENSOR_0 1   // Stock thermistor
+  #define TEMP_SENSOR_0 1   // HiLetgo thermistor
 #elif PRINTER_NUMBER == 3
   #define TEMP_SENSOR_0 1   // Stock thermistor
 #elif PRINTER_NUMBER == 4
@@ -521,10 +521,10 @@
     #define DEFAULT_Kd_LIST {  76.55,  76.55 }
   #else
     #if PRINTER_NUMBER == 2
-      // 12-19-2020 Volcano heater block clone, 0.4mm nozzle clone, sock clone, stock fan setup @ 220C
-      #define DEFAULT_Kp 25.57
-      #define DEFAULT_Ki 2.43
-      #define DEFAULT_Kd 67.12
+      // 12-25-2020 Winsin volcano block, 0.4mm nozzle clone, sock clone, Satsana fan shroud @ 220C
+      #define DEFAULT_Kp 26.45
+      #define DEFAULT_Ki 2.50
+      #define DEFAULT_Kd 69.97
     #elif PRINTER_NUMBER == 4
       // 12-17-2020 E3D Volcano, 1.2mm E3D nozzle, Kapton sock, stock fan setup @ 260C
       #define DEFAULT_Kp  36.15
@@ -1302,7 +1302,7 @@
 #if PRINTER_NUMBER == 1
   #define MESH_BED_LEVELING
 #elif PRINTER_NUMBER == 2
-  #define ESH_BED_LEVELING
+  #define MESH_BED_LEVELING         // Manual bed leveling
 #elif PRINTER_NUMBER == 3
   #define AUTO_BED_LEVELING_3POINT
 #elif PRINTER_NUMBER == 4
@@ -1418,8 +1418,9 @@
  * Add a bed leveling sub-menu for ABL or MBL.
  * Include a guided procedure if manual probing is enabled.
  */
-
-#if PRINTER_NUMBER == 4
+#if PRINTER_NUMBER == 2
+  #define LCD_BED_LEVELING
+#elif PRINTER_NUMBER == 4
   #define LCD_BED_LEVELING
 #endif
 
@@ -1584,15 +1585,27 @@
 // @section temperature
 
 // Preheat Constants
-#define PREHEAT_1_LABEL       "PLA"
-#define PREHEAT_1_TEMP_HOTEND 260
-#define PREHEAT_1_TEMP_BED     60
-#define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
+#if PRINTER_NUMBER == 2
+  #define PREHEAT_1_LABEL       "PLA"
+  #define PREHEAT_1_TEMP_HOTEND 220
+  #define PREHEAT_1_TEMP_BED     60
+  #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
-#define PREHEAT_2_LABEL       "ABS"
-#define PREHEAT_2_TEMP_HOTEND 240
-#define PREHEAT_2_TEMP_BED    110
-#define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
+  #define PREHEAT_2_LABEL       "ABS"
+  #define PREHEAT_2_TEMP_HOTEND 240
+  #define PREHEAT_2_TEMP_BED    110
+  #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
+#else
+  #define PREHEAT_1_LABEL       "PLA"
+  #define PREHEAT_1_TEMP_HOTEND 260
+  #define PREHEAT_1_TEMP_BED     60
+  #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
+
+  #define PREHEAT_2_LABEL       "ABS"
+  #define PREHEAT_2_TEMP_HOTEND 240
+  #define PREHEAT_2_TEMP_BED    110
+  #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
+#endif
 
 /**
  * Nozzle Park
