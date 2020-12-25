@@ -1,4 +1,4 @@
-#define PRINTER_NUMBER 2
+#define PRINTER_NUMBER 4
 /**
  * Marlin 3D Printer Firmware
  * Copyright (c) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -438,7 +438,7 @@
 #elif PRINTER_NUMBER == 3
   #define TEMP_SENSOR_0 1   // Stock thermistor
 #elif PRINTER_NUMBER == 4
-  #define TEMP_SENSOR_0 5   // E3D thermistor
+  #define TEMP_SENSOR_0 1   // Stock thermistor
 #else
   #define TEMP_SENSOR_0 1   // Default thermistor
 #endif
@@ -521,15 +521,15 @@
     #define DEFAULT_Kd_LIST {  76.55,  76.55 }
   #else
     #if PRINTER_NUMBER == 2
-      // 12-25-2020 Winsin volcano block, 0.4mm nozzle clone, sock clone, Satsana fan shroud @ 220C
+      // 12-25-2020 Winsin volcano block, 0.4mm nozzle clone, sock clone, Satsana fan shroud @ 220C for 15 cycles
       #define DEFAULT_Kp 25.28
       #define DEFAULT_Ki 2.34
       #define DEFAULT_Kd 68.41
     #elif PRINTER_NUMBER == 4
-      // 12-17-2020 E3D Volcano, 1.2mm E3D nozzle, Kapton sock, stock fan setup @ 260C
-      #define DEFAULT_Kp  36.15
-      #define DEFAULT_Ki   4.14
-      #define DEFAULT_Kd  78.96
+      // 12-25-2020 Winsinn volcano block, 1.2mm E3D nozzle, Winsinn sock, stock fan setup @ 260C for 15 cycles
+      #define DEFAULT_Kp 39.81
+      #define DEFAULT_Ki 5.52
+      #define DEFAULT_Kd 71.82
     #else
       #define DEFAULT_Kp  21.73
       #define DEFAULT_Ki   1.54
@@ -1306,7 +1306,7 @@
 #elif PRINTER_NUMBER == 3
   #define AUTO_BED_LEVELING_3POINT
 #elif PRINTER_NUMBER == 4
-  #define MESH_BED_LEVELING
+  #define MESH_BED_LEVELING         // Manual bed leveling
 #else
   //#define AUTO_BED_LEVELING_3POINT
   //#define AUTO_BED_LEVELING_LINEAR
