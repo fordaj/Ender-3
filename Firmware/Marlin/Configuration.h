@@ -527,9 +527,9 @@
       #define DEFAULT_Kd 68.41
     #elif PRINTER_NUMBER == 4
       // 12-25-2020 Winsinn volcano block, 1.2mm E3D nozzle, Winsinn sock, stock fan setup @ 260C for 15 cycles
-      #define DEFAULT_Kp 39.81
-      #define DEFAULT_Ki 5.52
-      #define DEFAULT_Kd 71.82
+      #define DEFAULT_Kp 34.51
+      #define DEFAULT_Ki 4.10
+      #define DEFAULT_Kd 72.63
     #else
       #define DEFAULT_Kp  21.73
       #define DEFAULT_Ki   1.54
