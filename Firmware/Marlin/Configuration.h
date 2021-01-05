@@ -912,7 +912,11 @@
  *      - normally-closed switches to GND and D32.
  *      - normally-open switches to 5V and D32.
  */
-//#define Z_MIN_PROBE_PIN 32 // Pin 32 is the RAMPS default
+#if PRINTER_NUMBER == 2
+  //#define Z_MIN_PROBE_PIN PC12 // Using PT-DET pin for IR probe
+#else
+  //#define Z_MIN_PROBE_PIN 32 // Pin 32 is the RAMPS default
+#endif
 
 /**
  * Probe Type
