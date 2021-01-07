@@ -28,9 +28,17 @@ Drilled out holes in part cooling fan to use M3 socket head bolts instead of M2.
 ## Spool Holder
 [Thing](https://www.thingiverse.com/thing:2864118/files) by [cisardom](https://www.thingiverse.com/cisardom/designs). All-plastic spool roller for mounting on the top LACK table. Drywall screws recommended.
 
-# Raspberry Pi 4 Mount
-[Thing](https://www.thingiverse.com/thing:4586351) by [eoyilmaz](https://www.thingiverse.com/thing:4586351). Not yet printed
+# LED Strip Mounting Bar
+[Thing](https://www.thingiverse.com/thing:3272248/files) by [LilTrublMakr](https://www.thingiverse.com/LilTrublMakr). Not yet printed
 
+# Power Supply Fan Silencer
+[Thing](https://www.thingiverse.com/thing:3328495) by [RohaniSousBois](https://www.thingiverse.com/RohaniSousBois). Not yet printed or downloaded.
+
+# Raspberry Pi 4 Mount
+[Thing](https://www.thingiverse.com/thing:4586351) by [eoyilmaz](https://www.thingiverse.com/thing:4586351). Not yet printed or downloaded.
+
+# V-Slot Track Covers
+[Thing](https://www.thingiverse.com/thing:3379068/files) by [ximes](https://www.thingiverse.com/ximes). Not yet printed or downloaded.
 
 # X Belt Tensioner
 [Thing](https://www.thingiverse.com/thing:3319649) by [Misterguru](https://www.thingiverse.com/misterguru/designs).
