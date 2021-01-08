@@ -1,4 +1,4 @@
-#define PRINTER_NUMBER 4
+#define PRINTER_NUMBER 3
 /**
  * Marlin 3D Printer Firmware
  * Copyright (c) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -525,6 +525,11 @@
       #define DEFAULT_Kp 25.28
       #define DEFAULT_Ki 2.34
       #define DEFAULT_Kd 68.41
+    #elif PRINTER_NUMBER == 3
+      // 01-08-2021 Winsin volcano block, 1.2mm E3D nozzle, sock clone, Satsana fan shroud @ 260C for 15 cycles
+      #define DEFAULT_Kp 32.38
+      #define DEFAULT_Ki 3.54
+      #define DEFAULT_Kd 73.98
     #elif PRINTER_NUMBER == 4
       // 12-25-2020 Winsinn volcano block, 1.2mm E3D nozzle, Winsinn sock, stock fan setup @ 260C for 15 cycles
       #define DEFAULT_Kp 34.51
@@ -571,11 +576,18 @@
   //#define MIN_BED_POWER 0
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
-  #if PRINTER_NUMBER == 2 // 12-25-2020 15 cycles at 60C with 3mm borosilicate glass
+  #if PRINTER_NUMBER == 2 
+    // 12-25-2020 15 cycles at 60C with 3mm borosilicate glass
     #define DEFAULT_bedKp 24.40
     #define DEFAULT_bedKi 4.06
     #define DEFAULT_bedKd 97.82
-  #elif PRINTER_NUMBER == 4 // 12-16-2020 with 5mm borosilicate glass
+  #elif PRINTER_NUMBER == 3 
+    // 01-08-2021 15 cycles at 60C with 3mm borosilicate glass
+    #define DEFAULT_bedKp 104.01
+    #define DEFAULT_bedKi 20.27
+    #define DEFAULT_bedKd 355.78
+  #elif PRINTER_NUMBER == 4 
+    // 12-16-2020 with 5mm borosilicate glass
     #define DEFAULT_bedKp 212.50
     #define DEFAULT_bedKi 35.34
     #define DEFAULT_bedKd 851.79
@@ -889,9 +901,9 @@
  */
 //#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
-#if PRINTER_NUMBER == 3
-  #define USE_PROBE_FOR_Z_HOMING  
-#endif
+//#if PRINTER_NUMBER == 3
+//  #define USE_PROBE_FOR_Z_HOMING  
+//#endif
 
 
 // Force the use of the probe for Z-axis homing
@@ -925,9 +937,9 @@
  * Activate one of these to use Auto Bed Leveling below.
  */
 
-#if PRINTER_NUMBER == 3
-  #define BLTOUCH           // BLTouch Clone
-#endif
+//#if PRINTER_NUMBER == 3
+//  #define BLTOUCH           // BLTouch Clone
+//#endif
 
 
 
@@ -1179,6 +1191,8 @@
 
 #if PRINTER_NUMBER == 2
   #define Z_AFTER_HOMING  10      // (mm) Height to move to after homing Z
+#elif PRINTER_NUMBER == 3
+  #define Z_AFTER_HOMING  10      // (mm) Height to move to after homing Z
 #elif PRINTER_NUMBER == 4
   #define Z_AFTER_HOMING  10      // (mm) Height to move to after homing Z
 #endif
@@ -1304,11 +1318,11 @@
  */
 
 #if PRINTER_NUMBER == 1
-  #define MESH_BED_LEVELING
+  #define MESH_BED_LEVELING         // Manual bed leveling
 #elif PRINTER_NUMBER == 2
   #define MESH_BED_LEVELING         // Manual bed leveling
 #elif PRINTER_NUMBER == 3
-  #define AUTO_BED_LEVELING_3POINT
+  #define MESH_BED_LEVELING         // Manual bed leveling
 #elif PRINTER_NUMBER == 4
   #define MESH_BED_LEVELING         // Manual bed leveling
 #else
@@ -1424,6 +1438,8 @@
  */
 #if PRINTER_NUMBER == 2
   #define LCD_BED_LEVELING
+#elif PRINTER_NUMBER == 3
+  #define LCD_BED_LEVELING
 #elif PRINTER_NUMBER == 4
   #define LCD_BED_LEVELING
 #endif
@@ -1470,9 +1486,9 @@
 // - Move the Z probe (or nozzle) to a defined XY point before Z Homing.
 // - Prevent Z homing when the Z probe is outside bed area.
 //
-#if PRINTER_NUMBER == 3
-  #define Z_SAFE_HOMING
-#endif
+//#if PRINTER_NUMBER == 3
+  //#define Z_SAFE_HOMING
+//#endif
 
 #if ENABLED(Z_SAFE_HOMING)
   #define Z_SAFE_HOMING_X_POINT X_CENTER  // X point for Z homing
