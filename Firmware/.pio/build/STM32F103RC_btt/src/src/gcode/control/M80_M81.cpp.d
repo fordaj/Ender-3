@@ -101,7 +101,6 @@
  Marlin/src/gcode/control/../../module/../MarlinCore.h \
  Marlin/src/gcode/control/../../module/motion.h \
  Marlin/src/gcode/control/../../module/../gcode/queue.h \
- Marlin/src/gcode/control/../../module/../libs/vector_3.h \
  Marlin/src/gcode/control/../../module/printcounter.h \
  Marlin/src/gcode/control/../../module/../libs/stopwatch.h \
  Marlin/src/gcode/control/../../module/../libs/duration_t.h \
@@ -328,8 +327,6 @@ Marlin/src/gcode/control/../../module/../MarlinCore.h:
 Marlin/src/gcode/control/../../module/motion.h:
 
 Marlin/src/gcode/control/../../module/../gcode/queue.h:
-
-Marlin/src/gcode/control/../../module/../libs/vector_3.h:
 
 Marlin/src/gcode/control/../../module/printcounter.h:
 

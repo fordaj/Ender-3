@@ -116,6 +116,7 @@
  /Users/andyford/.platformio/packages/framework-arduinoststm32-maple/STM32F1/cores/maple/Print.h \
  .pio/libdeps/STM32F103RC_btt/U8glib-HAL/src/clib/u8g.h \
  Marlin/src/module/../feature/bedlevel/bedlevel.h \
+ Marlin/src/module/../feature/bedlevel/abl/abl.h \
  Marlin/src/module/../core/debug_out.h
 
 Marlin/src/module/../inc/MarlinConfig.h:
@@ -361,5 +362,7 @@ Marlin/src/module/../lcd/dogm/u8g_fontutf8.h:
 .pio/libdeps/STM32F103RC_btt/U8glib-HAL/src/clib/u8g.h:
 
 Marlin/src/module/../feature/bedlevel/bedlevel.h:
+
+Marlin/src/module/../feature/bedlevel/abl/abl.h:
 
 Marlin/src/module/../core/debug_out.h:

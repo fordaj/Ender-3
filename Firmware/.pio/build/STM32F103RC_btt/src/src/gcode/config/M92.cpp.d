@@ -97,8 +97,7 @@
  Marlin/src/gcode/config/../../module/planner.h \
  Marlin/src/gcode/config/../../module/../MarlinCore.h \
  Marlin/src/gcode/config/../../module/motion.h \
- Marlin/src/gcode/config/../../module/../gcode/queue.h \
- Marlin/src/gcode/config/../../module/../libs/vector_3.h
+ Marlin/src/gcode/config/../../module/../gcode/queue.h
 
 Marlin/src/gcode/config/../gcode.h:
 
@@ -297,5 +296,3 @@ Marlin/src/gcode/config/../../module/../MarlinCore.h:
 Marlin/src/gcode/config/../../module/motion.h:
 
 Marlin/src/gcode/config/../../module/../gcode/queue.h:
-
-Marlin/src/gcode/config/../../module/../libs/vector_3.h:

@@ -96,11 +96,11 @@
  Marlin/src/gcode/bedlevel/../gcode.h \
  Marlin/src/gcode/bedlevel/../parser.h \
  Marlin/src/gcode/bedlevel/../../feature/bedlevel/bedlevel.h \
+ Marlin/src/gcode/bedlevel/../../feature/bedlevel/abl/abl.h \
  Marlin/src/gcode/bedlevel/../../module/planner.h \
  Marlin/src/gcode/bedlevel/../../module/../MarlinCore.h \
  Marlin/src/gcode/bedlevel/../../module/motion.h \
  Marlin/src/gcode/bedlevel/../../module/../gcode/queue.h \
- Marlin/src/gcode/bedlevel/../../module/../libs/vector_3.h \
  Marlin/src/gcode/bedlevel/../../module/probe.h \
  Marlin/src/gcode/bedlevel/../../module/settings.h \
  Marlin/src/gcode/bedlevel/../../module/../HAL/shared/eeprom_api.h \
@@ -298,6 +298,8 @@ Marlin/src/gcode/bedlevel/../parser.h:
 
 Marlin/src/gcode/bedlevel/../../feature/bedlevel/bedlevel.h:
 
+Marlin/src/gcode/bedlevel/../../feature/bedlevel/abl/abl.h:
+
 Marlin/src/gcode/bedlevel/../../module/planner.h:
 
 Marlin/src/gcode/bedlevel/../../module/../MarlinCore.h:
@@ -305,8 +307,6 @@ Marlin/src/gcode/bedlevel/../../module/../MarlinCore.h:
 Marlin/src/gcode/bedlevel/../../module/motion.h:
 
 Marlin/src/gcode/bedlevel/../../module/../gcode/queue.h:
-
-Marlin/src/gcode/bedlevel/../../module/../libs/vector_3.h:
 
 Marlin/src/gcode/bedlevel/../../module/probe.h:
 

@@ -92,7 +92,11 @@
  Marlin/src/gcode/bedlevel/abl/../../../inc/../core/../lcd/language/language_en.h \
  Marlin/src/gcode/bedlevel/abl/../../../inc/../core/utility.h \
  Marlin/src/gcode/bedlevel/abl/../../../inc/../core/../core/millis_t.h \
- Marlin/src/gcode/bedlevel/abl/../../../inc/../core/serial.h
+ Marlin/src/gcode/bedlevel/abl/../../../inc/../core/serial.h \
+ Marlin/src/gcode/bedlevel/abl/../../gcode.h \
+ Marlin/src/gcode/bedlevel/abl/../../parser.h \
+ Marlin/src/gcode/bedlevel/abl/../../../feature/bedlevel/bedlevel.h \
+ Marlin/src/gcode/bedlevel/abl/../../../feature/bedlevel/abl/abl.h
 
 Marlin/src/gcode/bedlevel/abl/../../../inc/MarlinConfig.h:
 
@@ -279,3 +283,11 @@ Marlin/src/gcode/bedlevel/abl/../../../inc/../core/utility.h:
 Marlin/src/gcode/bedlevel/abl/../../../inc/../core/../core/millis_t.h:
 
 Marlin/src/gcode/bedlevel/abl/../../../inc/../core/serial.h:
+
+Marlin/src/gcode/bedlevel/abl/../../gcode.h:
+
+Marlin/src/gcode/bedlevel/abl/../../parser.h:
+
+Marlin/src/gcode/bedlevel/abl/../../../feature/bedlevel/bedlevel.h:
+
+Marlin/src/gcode/bedlevel/abl/../../../feature/bedlevel/abl/abl.h:

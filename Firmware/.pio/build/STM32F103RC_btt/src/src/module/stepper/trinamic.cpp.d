@@ -138,7 +138,6 @@
  .pio/libdeps/STM32F103RC_btt/U8glib-HAL/src/clib/u8g.h \
  Marlin/src/module/stepper/../../feature/../module/planner.h \
  Marlin/src/module/stepper/../../feature/../module/../gcode/queue.h \
- Marlin/src/module/stepper/../../feature/../module/../libs/vector_3.h \
  Marlin/src/module/stepper/../stepper.h \
  Marlin/src/module/stepper/../stepper/indirection.h
 
@@ -417,8 +416,6 @@ Marlin/src/module/stepper/../../feature/../lcd/dogm/u8g_fontutf8.h:
 Marlin/src/module/stepper/../../feature/../module/planner.h:
 
 Marlin/src/module/stepper/../../feature/../module/../gcode/queue.h:
-
-Marlin/src/module/stepper/../../feature/../module/../libs/vector_3.h:
 
 Marlin/src/module/stepper/../stepper.h:
 

@@ -96,11 +96,11 @@
  Marlin/src/gcode/bedlevel/abl/../../gcode.h \
  Marlin/src/gcode/bedlevel/abl/../../parser.h \
  Marlin/src/gcode/bedlevel/abl/../../../feature/bedlevel/bedlevel.h \
+ Marlin/src/gcode/bedlevel/abl/../../../feature/bedlevel/abl/abl.h \
  Marlin/src/gcode/bedlevel/abl/../../../module/motion.h \
  Marlin/src/gcode/bedlevel/abl/../../../module/planner.h \
  Marlin/src/gcode/bedlevel/abl/../../../module/../MarlinCore.h \
  Marlin/src/gcode/bedlevel/abl/../../../module/../gcode/queue.h \
- Marlin/src/gcode/bedlevel/abl/../../../module/../libs/vector_3.h \
  Marlin/src/gcode/bedlevel/abl/../../../module/stepper.h \
  Marlin/src/gcode/bedlevel/abl/../../../module/stepper/indirection.h \
  Marlin/src/gcode/bedlevel/abl/../../../module/stepper/trinamic.h \
@@ -339,6 +339,8 @@ Marlin/src/gcode/bedlevel/abl/../../parser.h:
 
 Marlin/src/gcode/bedlevel/abl/../../../feature/bedlevel/bedlevel.h:
 
+Marlin/src/gcode/bedlevel/abl/../../../feature/bedlevel/abl/abl.h:
+
 Marlin/src/gcode/bedlevel/abl/../../../module/motion.h:
 
 Marlin/src/gcode/bedlevel/abl/../../../module/planner.h:
@@ -346,8 +348,6 @@ Marlin/src/gcode/bedlevel/abl/../../../module/planner.h:
 Marlin/src/gcode/bedlevel/abl/../../../module/../MarlinCore.h:
 
 Marlin/src/gcode/bedlevel/abl/../../../module/../gcode/queue.h:
-
-Marlin/src/gcode/bedlevel/abl/../../../module/../libs/vector_3.h:
 
 Marlin/src/gcode/bedlevel/abl/../../../module/stepper.h:
 

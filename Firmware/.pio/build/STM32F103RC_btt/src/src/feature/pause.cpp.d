@@ -97,7 +97,6 @@
  Marlin/src/feature/../module/motion.h \
  Marlin/src/feature/../module/planner.h \
  Marlin/src/feature/../module/../gcode/queue.h \
- Marlin/src/feature/../module/../libs/vector_3.h \
  Marlin/src/feature/../module/stepper.h \
  Marlin/src/feature/../module/stepper/indirection.h \
  Marlin/src/feature/../module/stepper/trinamic.h \
@@ -346,8 +345,6 @@ Marlin/src/feature/../module/motion.h:
 Marlin/src/feature/../module/planner.h:
 
 Marlin/src/feature/../module/../gcode/queue.h:
-
-Marlin/src/feature/../module/../libs/vector_3.h:
 
 Marlin/src/feature/../module/stepper.h:
 

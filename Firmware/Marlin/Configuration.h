@@ -901,13 +901,12 @@
  */
 //#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
+// Force the use of the probe for Z-axis homing
 #if PRINTER_NUMBER == 2
   #define USE_PROBE_FOR_Z_HOMING
+#else
+  //#define USE_PROBE_FOR_Z_HOMING
 #endif
-
-
-// Force the use of the probe for Z-axis homing
-//#define USE_PROBE_FOR_Z_HOMING
 
 /**
  * Z_MIN_PROBE_PIN
@@ -1326,7 +1325,7 @@
 #if PRINTER_NUMBER == 1
   #define MESH_BED_LEVELING         // Manual bed leveling
 #elif PRINTER_NUMBER == 2
-  #define AUTO_BED_LEVELING_3POINT  // Three point bed leveling
+  #define AUTO_BED_LEVELING_BILINEAR // Bilinear bed leveling
 #elif PRINTER_NUMBER == 3
   #define MESH_BED_LEVELING         // Manual bed leveling
 #elif PRINTER_NUMBER == 4

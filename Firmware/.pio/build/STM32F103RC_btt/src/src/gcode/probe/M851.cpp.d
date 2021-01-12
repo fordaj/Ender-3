@@ -95,6 +95,7 @@
  Marlin/src/gcode/probe/../../inc/../core/serial.h \
  Marlin/src/gcode/probe/../gcode.h Marlin/src/gcode/probe/../parser.h \
  Marlin/src/gcode/probe/../../feature/bedlevel/bedlevel.h \
+ Marlin/src/gcode/probe/../../feature/bedlevel/abl/abl.h \
  Marlin/src/gcode/probe/../../module/probe.h \
  Marlin/src/gcode/probe/../../module/motion.h
 
@@ -289,6 +290,8 @@ Marlin/src/gcode/probe/../gcode.h:
 Marlin/src/gcode/probe/../parser.h:
 
 Marlin/src/gcode/probe/../../feature/bedlevel/bedlevel.h:
+
+Marlin/src/gcode/probe/../../feature/bedlevel/abl/abl.h:
 
 Marlin/src/gcode/probe/../../module/probe.h:
 

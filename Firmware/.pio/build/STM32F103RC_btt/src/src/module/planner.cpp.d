@@ -94,8 +94,8 @@
  Marlin/src/module/../inc/../core/utility.h \
  Marlin/src/module/../inc/../core/../core/millis_t.h \
  Marlin/src/module/../inc/../core/serial.h Marlin/src/module/motion.h \
- Marlin/src/module/../gcode/queue.h Marlin/src/module/../libs/vector_3.h \
- Marlin/src/module/stepper.h Marlin/src/module/stepper/indirection.h \
+ Marlin/src/module/../gcode/queue.h Marlin/src/module/stepper.h \
+ Marlin/src/module/stepper/indirection.h \
  Marlin/src/module/stepper/trinamic.h \
  .pio/libdeps/STM32F103RC_btt/TMCStepper/src/TMCStepper.h \
  /Users/andyford/.platformio/packages/framework-arduinoststm32-maple/STM32F1/cores/maple/Stream.h \
@@ -141,7 +141,8 @@
  Marlin/src/module/thermistor/thermistors.h \
  Marlin/src/module/thermistor/thermistor_1.h \
  Marlin/src/module/../gcode/parser.h \
- Marlin/src/module/../feature/bedlevel/bedlevel.h
+ Marlin/src/module/../feature/bedlevel/bedlevel.h \
+ Marlin/src/module/../feature/bedlevel/abl/abl.h
 
 Marlin/src/module/planner.h:
 
@@ -337,8 +338,6 @@ Marlin/src/module/motion.h:
 
 Marlin/src/module/../gcode/queue.h:
 
-Marlin/src/module/../libs/vector_3.h:
-
 Marlin/src/module/stepper.h:
 
 Marlin/src/module/stepper/indirection.h:
@@ -434,3 +433,5 @@ Marlin/src/module/thermistor/thermistor_1.h:
 Marlin/src/module/../gcode/parser.h:
 
 Marlin/src/module/../feature/bedlevel/bedlevel.h:
+
+Marlin/src/module/../feature/bedlevel/abl/abl.h:

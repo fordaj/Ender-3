@@ -91,7 +91,7 @@
  Marlin/src/libs/../inc/../core/../lcd/language/language_en.h \
  Marlin/src/libs/../inc/../core/utility.h \
  Marlin/src/libs/../inc/../core/../core/millis_t.h \
- Marlin/src/libs/../inc/../core/serial.h Marlin/src/libs/vector_3.h
+ Marlin/src/libs/../inc/../core/serial.h
 
 Marlin/src/libs/../inc/MarlinConfig.h:
 
@@ -278,5 +278,3 @@ Marlin/src/libs/../inc/../core/utility.h:
 Marlin/src/libs/../inc/../core/../core/millis_t.h:
 
 Marlin/src/libs/../inc/../core/serial.h:
-
-Marlin/src/libs/vector_3.h:

@@ -98,7 +98,6 @@
  Marlin/src/gcode/lcd/../../module/../MarlinCore.h \
  Marlin/src/gcode/lcd/../../module/motion.h \
  Marlin/src/gcode/lcd/../../module/../gcode/queue.h \
- Marlin/src/gcode/lcd/../../module/../libs/vector_3.h \
  Marlin/src/gcode/lcd/../../lcd/ultralcd.h \
  Marlin/src/gcode/lcd/../../lcd/../libs/buzzer.h \
  Marlin/src/gcode/lcd/../../lcd/../libs/circularqueue.h \
@@ -316,8 +315,6 @@ Marlin/src/gcode/lcd/../../module/../MarlinCore.h:
 Marlin/src/gcode/lcd/../../module/motion.h:
 
 Marlin/src/gcode/lcd/../../module/../gcode/queue.h:
-
-Marlin/src/gcode/lcd/../../module/../libs/vector_3.h:
 
 Marlin/src/gcode/lcd/../../lcd/ultralcd.h:
 
