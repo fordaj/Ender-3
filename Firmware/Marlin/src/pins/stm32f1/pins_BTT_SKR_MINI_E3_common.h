@@ -53,7 +53,7 @@
 //
 // Z Probe must be this pin
 //
-#define Z_MIN_PROBE_PIN                     PC12 // Changed to PT-DET since it is not shown here //PC14  // "PROBE"
+#define Z_MIN_PROBE_PIN                     PC14  // "PROBE"
 
 //
 // Filament Runout Sensor
