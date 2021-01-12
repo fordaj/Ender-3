@@ -901,9 +901,9 @@
  */
 //#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
-//#if PRINTER_NUMBER == 3
-//  #define USE_PROBE_FOR_Z_HOMING  
-//#endif
+#if PRINTER_NUMBER == 2
+  #define USE_PROBE_FOR_Z_HOMING
+#endif
 
 
 // Force the use of the probe for Z-axis homing
@@ -925,7 +925,7 @@
  *      - normally-open switches to 5V and D32.
  */
 #if PRINTER_NUMBER == 2
-  //#define Z_MIN_PROBE_PIN PC12 // Using PT-DET pin for IR probe
+  #define Z_MIN_PROBE_PIN PC12 // Using PT-DET pin for IR probe
 #else
   //#define Z_MIN_PROBE_PIN 32 // Pin 32 is the RAMPS default
 #endif
@@ -1060,7 +1060,9 @@
  *     O-- FRONT --+
  */
 
-#if PRINTER_NUMBER == 3
+#if PRINTER_NUMBER == 2
+  #define NOZZLE_TO_PROBE_OFFSET { 4, 34, -2.5 }    // IR Probe on Satsana Remix
+#elif PRINTER_NUMBER == 3
   #define NOZZLE_TO_PROBE_OFFSET { -39.5, -7.2, -2.625 }    // BLTouch Clone
 #else
   #define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
