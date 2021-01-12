@@ -1322,7 +1322,7 @@
 #if PRINTER_NUMBER == 1
   #define MESH_BED_LEVELING         // Manual bed leveling
 #elif PRINTER_NUMBER == 2
-  #define MESH_BED_LEVELING         // Manual bed leveling
+  #define AUTO_BED_LEVELING_UBL     // Unified bed leveling
 #elif PRINTER_NUMBER == 3
   #define MESH_BED_LEVELING         // Manual bed leveling
 #elif PRINTER_NUMBER == 4
@@ -1609,7 +1609,7 @@
 // Preheat Constants
 #if PRINTER_NUMBER == 2
   #define PREHEAT_1_LABEL       "PLA"
-  #define PREHEAT_1_TEMP_HOTEND 220
+  #define PREHEAT_1_TEMP_HOTEND 200
   #define PREHEAT_1_TEMP_BED     60
   #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
