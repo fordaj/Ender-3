@@ -99,6 +99,7 @@
  Marlin/src/gcode/control/../../module/../MarlinCore.h \
  Marlin/src/gcode/control/../../module/motion.h \
  Marlin/src/gcode/control/../../module/../gcode/queue.h \
+ Marlin/src/gcode/control/../../module/../libs/vector_3.h \
  Marlin/src/gcode/control/../../module/stepper/indirection.h \
  Marlin/src/gcode/control/../../module/stepper/trinamic.h \
  .pio/libdeps/STM32F103RC_btt/TMCStepper/src/TMCStepper.h \
@@ -341,6 +342,8 @@ Marlin/src/gcode/control/../../module/../MarlinCore.h:
 Marlin/src/gcode/control/../../module/motion.h:
 
 Marlin/src/gcode/control/../../module/../gcode/queue.h:
+
+Marlin/src/gcode/control/../../module/../libs/vector_3.h:
 
 Marlin/src/gcode/control/../../module/stepper/indirection.h:
 

@@ -114,6 +114,7 @@
  /Users/andyford/.platformio/packages/framework-arduinoststm32-maple/STM32F1/cores/maple/Print.h \
  .pio/libdeps/STM32F103RC_btt/U8glib-HAL/src/clib/u8g.h \
  Marlin/src/gcode/../module/planner.h \
+ Marlin/src/gcode/../module/../libs/vector_3.h \
  Marlin/src/gcode/../module/temperature.h \
  Marlin/src/gcode/../module/thermistor/thermistors.h \
  Marlin/src/gcode/../module/thermistor/thermistor_1.h
@@ -353,6 +354,8 @@ Marlin/src/gcode/../lcd/dogm/u8g_fontutf8.h:
 .pio/libdeps/STM32F103RC_btt/U8glib-HAL/src/clib/u8g.h:
 
 Marlin/src/gcode/../module/planner.h:
+
+Marlin/src/gcode/../module/../libs/vector_3.h:
 
 Marlin/src/gcode/../module/temperature.h:
 

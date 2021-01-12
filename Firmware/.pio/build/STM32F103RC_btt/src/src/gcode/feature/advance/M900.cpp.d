@@ -99,6 +99,7 @@
  Marlin/src/gcode/feature/advance/../../../module/../MarlinCore.h \
  Marlin/src/gcode/feature/advance/../../../module/motion.h \
  Marlin/src/gcode/feature/advance/../../../module/../gcode/queue.h \
+ Marlin/src/gcode/feature/advance/../../../module/../libs/vector_3.h \
  Marlin/src/gcode/feature/advance/../../../module/stepper.h \
  Marlin/src/gcode/feature/advance/../../../module/stepper/indirection.h \
  Marlin/src/gcode/feature/advance/../../../module/stepper/trinamic.h \
@@ -340,6 +341,8 @@ Marlin/src/gcode/feature/advance/../../../module/../MarlinCore.h:
 Marlin/src/gcode/feature/advance/../../../module/motion.h:
 
 Marlin/src/gcode/feature/advance/../../../module/../gcode/queue.h:
+
+Marlin/src/gcode/feature/advance/../../../module/../libs/vector_3.h:
 
 Marlin/src/gcode/feature/advance/../../../module/stepper.h:
 

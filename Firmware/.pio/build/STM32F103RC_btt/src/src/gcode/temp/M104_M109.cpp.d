@@ -102,6 +102,7 @@
  Marlin/src/gcode/temp/../../module/planner.h \
  Marlin/src/gcode/temp/../../module/../MarlinCore.h \
  Marlin/src/gcode/temp/../../module/../gcode/queue.h \
+ Marlin/src/gcode/temp/../../module/../libs/vector_3.h \
  Marlin/src/gcode/temp/../../lcd/ultralcd.h \
  Marlin/src/gcode/temp/../../lcd/../libs/buzzer.h \
  Marlin/src/gcode/temp/../../lcd/../libs/circularqueue.h \
@@ -328,6 +329,8 @@ Marlin/src/gcode/temp/../../module/planner.h:
 Marlin/src/gcode/temp/../../module/../MarlinCore.h:
 
 Marlin/src/gcode/temp/../../module/../gcode/queue.h:
+
+Marlin/src/gcode/temp/../../module/../libs/vector_3.h:
 
 Marlin/src/gcode/temp/../../lcd/ultralcd.h:
 

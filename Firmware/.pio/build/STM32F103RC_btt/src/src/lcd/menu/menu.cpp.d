@@ -116,11 +116,11 @@
  Marlin/src/lcd/menu/../../libs/numtostr.h \
  Marlin/src/lcd/menu/../../module/planner.h \
  Marlin/src/lcd/menu/../../module/../gcode/queue.h \
+ Marlin/src/lcd/menu/../../module/../libs/vector_3.h \
  Marlin/src/lcd/menu/../../module/printcounter.h \
  Marlin/src/lcd/menu/../../module/../libs/stopwatch.h \
  Marlin/src/lcd/menu/../../module/../libs/duration_t.h \
- Marlin/src/lcd/menu/../../feature/bedlevel/bedlevel.h \
- Marlin/src/lcd/menu/../../feature/bedlevel/mbl/mesh_bed_leveling.h
+ Marlin/src/lcd/menu/../../feature/bedlevel/bedlevel.h
 
 Marlin/src/lcd/menu/../../inc/MarlinConfigPre.h:
 
@@ -358,6 +358,8 @@ Marlin/src/lcd/menu/../../module/planner.h:
 
 Marlin/src/lcd/menu/../../module/../gcode/queue.h:
 
+Marlin/src/lcd/menu/../../module/../libs/vector_3.h:
+
 Marlin/src/lcd/menu/../../module/printcounter.h:
 
 Marlin/src/lcd/menu/../../module/../libs/stopwatch.h:
@@ -365,5 +367,3 @@ Marlin/src/lcd/menu/../../module/../libs/stopwatch.h:
 Marlin/src/lcd/menu/../../module/../libs/duration_t.h:
 
 Marlin/src/lcd/menu/../../feature/bedlevel/bedlevel.h:
-
-Marlin/src/lcd/menu/../../feature/bedlevel/mbl/mesh_bed_leveling.h:

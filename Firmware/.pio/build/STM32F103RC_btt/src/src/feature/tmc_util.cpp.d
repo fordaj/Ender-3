@@ -135,6 +135,7 @@
  .pio/libdeps/STM32F103RC_btt/TMCStepper/src/source/TMC2660_bitfields.h \
  Marlin/src/feature/../module/planner.h \
  Marlin/src/feature/../module/../gcode/queue.h \
+ Marlin/src/feature/../module/../libs/vector_3.h \
  Marlin/src/feature/../module/stepper/indirection.h \
  Marlin/src/feature/../module/stepper/trinamic.h \
  Marlin/src/feature/../module/printcounter.h \
@@ -416,6 +417,8 @@ Marlin/src/HAL/STM32F1/SPI.h:
 Marlin/src/feature/../module/planner.h:
 
 Marlin/src/feature/../module/../gcode/queue.h:
+
+Marlin/src/feature/../module/../libs/vector_3.h:
 
 Marlin/src/feature/../module/stepper/indirection.h:
 

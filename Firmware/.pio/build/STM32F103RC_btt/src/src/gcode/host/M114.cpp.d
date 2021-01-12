@@ -99,6 +99,7 @@
  Marlin/src/gcode/host/../../module/planner.h \
  Marlin/src/gcode/host/../../module/../MarlinCore.h \
  Marlin/src/gcode/host/../../module/../gcode/queue.h \
+ Marlin/src/gcode/host/../../module/../libs/vector_3.h \
  Marlin/src/gcode/host/../../module/stepper/indirection.h \
  Marlin/src/gcode/host/../../module/stepper/trinamic.h \
  .pio/libdeps/STM32F103RC_btt/TMCStepper/src/TMCStepper.h \
@@ -341,6 +342,8 @@ Marlin/src/gcode/host/../../module/planner.h:
 Marlin/src/gcode/host/../../module/../MarlinCore.h:
 
 Marlin/src/gcode/host/../../module/../gcode/queue.h:
+
+Marlin/src/gcode/host/../../module/../libs/vector_3.h:
 
 Marlin/src/gcode/host/../../module/stepper/indirection.h:
 

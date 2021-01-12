@@ -120,7 +120,9 @@
  Marlin/src/lcd/menu/../../module/thermistor/thermistors.h \
  Marlin/src/lcd/menu/../../module/thermistor/thermistor_1.h \
  Marlin/src/lcd/menu/../../module/planner.h \
- Marlin/src/lcd/menu/../../gcode/parser.h
+ Marlin/src/lcd/menu/../../module/../libs/vector_3.h \
+ Marlin/src/lcd/menu/../../gcode/parser.h \
+ Marlin/src/lcd/menu/../../module/probe.h
 
 Marlin/src/lcd/menu/../../inc/MarlinConfigPre.h:
 
@@ -366,4 +368,8 @@ Marlin/src/lcd/menu/../../module/thermistor/thermistor_1.h:
 
 Marlin/src/lcd/menu/../../module/planner.h:
 
+Marlin/src/lcd/menu/../../module/../libs/vector_3.h:
+
 Marlin/src/lcd/menu/../../gcode/parser.h:
+
+Marlin/src/lcd/menu/../../module/probe.h:

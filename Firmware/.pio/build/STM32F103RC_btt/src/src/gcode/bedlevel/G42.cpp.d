@@ -99,7 +99,8 @@
  Marlin/src/gcode/bedlevel/../../module/motion.h \
  Marlin/src/gcode/bedlevel/../../module/probe.h \
  Marlin/src/gcode/bedlevel/../../feature/bedlevel/bedlevel.h \
- Marlin/src/gcode/bedlevel/../../feature/bedlevel/mbl/mesh_bed_leveling.h
+ Marlin/src/gcode/bedlevel/../../feature/bedlevel/ubl/ubl.h \
+ Marlin/src/gcode/bedlevel/../../feature/bedlevel/ubl/../../../core/debug_out.h
 
 Marlin/src/gcode/bedlevel/../../inc/MarlinConfig.h:
 
@@ -299,4 +300,6 @@ Marlin/src/gcode/bedlevel/../../module/probe.h:
 
 Marlin/src/gcode/bedlevel/../../feature/bedlevel/bedlevel.h:
 
-Marlin/src/gcode/bedlevel/../../feature/bedlevel/mbl/mesh_bed_leveling.h:
+Marlin/src/gcode/bedlevel/../../feature/bedlevel/ubl/ubl.h:
+
+Marlin/src/gcode/bedlevel/../../feature/bedlevel/ubl/../../../core/debug_out.h:

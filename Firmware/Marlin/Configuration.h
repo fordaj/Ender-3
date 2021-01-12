@@ -955,7 +955,11 @@
  * A Fix-Mounted Probe either doesn't deploy or needs manual deployment.
  *   (e.g., an inductive probe or a nozzle-based probe-switch.)
  */
-//#define FIX_MOUNTED_PROBE
+#if PRINTER_NUMBER == 2
+  #define FIX_MOUNTED_PROBE
+#else
+  //#define FIX_MOUNTED_PROBE
+#endif
 
 /**
  * Use the nozzle as the probe, as with a conductive
@@ -1322,7 +1326,7 @@
 #if PRINTER_NUMBER == 1
   #define MESH_BED_LEVELING         // Manual bed leveling
 #elif PRINTER_NUMBER == 2
-  #define AUTO_BED_LEVELING_UBL     // Unified bed leveling
+  #define AUTO_BED_LEVELING_3POINT  // Three point bed leveling
 #elif PRINTER_NUMBER == 3
   #define MESH_BED_LEVELING         // Manual bed leveling
 #elif PRINTER_NUMBER == 4
@@ -1343,6 +1347,7 @@
   #define RESTORE_LEVELING_AFTER_G28
 #else
   //#define RESTORE_LEVELING_AFTER_G28
+#endif
 
 /**
  * Enable detailed logging of G28, G29, M48, etc.
@@ -1491,9 +1496,11 @@
 // - Move the Z probe (or nozzle) to a defined XY point before Z Homing.
 // - Prevent Z homing when the Z probe is outside bed area.
 //
-//#if PRINTER_NUMBER == 3
+#if PRINTER_NUMBER == 2
+  #define Z_SAFE_HOMING
+#else
   //#define Z_SAFE_HOMING
-//#endif
+#endif
 
 #if ENABLED(Z_SAFE_HOMING)
   #define Z_SAFE_HOMING_X_POINT X_CENTER  // X point for Z homing

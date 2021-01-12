@@ -100,6 +100,7 @@
  Marlin/src/gcode/calibrate/../../module/../MarlinCore.h \
  Marlin/src/gcode/calibrate/../../module/motion.h \
  Marlin/src/gcode/calibrate/../../module/../gcode/queue.h \
+ Marlin/src/gcode/calibrate/../../module/../libs/vector_3.h \
  Marlin/src/gcode/calibrate/../../module/stepper/indirection.h \
  Marlin/src/gcode/calibrate/../../module/stepper/trinamic.h \
  .pio/libdeps/STM32F103RC_btt/TMCStepper/src/TMCStepper.h \
@@ -144,7 +145,6 @@
  .pio/libdeps/STM32F103RC_btt/U8glib-HAL/src/clib/u8g.h \
  Marlin/src/gcode/calibrate/../../module/endstops.h \
  Marlin/src/gcode/calibrate/../../feature/bedlevel/bedlevel.h \
- Marlin/src/gcode/calibrate/../../feature/bedlevel/mbl/mesh_bed_leveling.h \
  Marlin/src/gcode/calibrate/../../module/probe.h \
  Marlin/src/gcode/calibrate/../../core/debug_out.h
 
@@ -348,6 +348,8 @@ Marlin/src/gcode/calibrate/../../module/motion.h:
 
 Marlin/src/gcode/calibrate/../../module/../gcode/queue.h:
 
+Marlin/src/gcode/calibrate/../../module/../libs/vector_3.h:
+
 Marlin/src/gcode/calibrate/../../module/stepper/indirection.h:
 
 Marlin/src/gcode/calibrate/../../module/stepper/trinamic.h:
@@ -435,8 +437,6 @@ Marlin/src/gcode/calibrate/../../module/stepper/../../feature/../lcd/dogm/u8g_fo
 Marlin/src/gcode/calibrate/../../module/endstops.h:
 
 Marlin/src/gcode/calibrate/../../feature/bedlevel/bedlevel.h:
-
-Marlin/src/gcode/calibrate/../../feature/bedlevel/mbl/mesh_bed_leveling.h:
 
 Marlin/src/gcode/calibrate/../../module/probe.h:
 

@@ -91,8 +91,8 @@
  /Users/andyford/.platformio/packages/framework-arduinoststm32-maple/STM32F1/variants/generic_stm32f103r/pins_arduino.h \
  /Users/andyford/.platformio/packages/framework-arduinoststm32-maple/STM32F1/variants/generic_stm32f103r/variant.h \
  Marlin/src/module/motion.h Marlin/src/module/planner.h \
- Marlin/src/module/../gcode/queue.h Marlin/src/module/endstops.h \
- Marlin/src/module/temperature.h \
+ Marlin/src/module/../gcode/queue.h Marlin/src/module/../libs/vector_3.h \
+ Marlin/src/module/endstops.h Marlin/src/module/temperature.h \
  Marlin/src/module/thermistor/thermistors.h \
  Marlin/src/module/thermistor/thermistor_1.h Marlin/src/module/settings.h \
  Marlin/src/module/../HAL/shared/eeprom_api.h \
@@ -142,9 +142,7 @@
  /Users/andyford/.platformio/packages/framework-arduinoststm32-maple/STM32F1/cores/maple/Print.h \
  .pio/libdeps/STM32F103RC_btt/U8glib-HAL/src/clib/u8g.h \
  Marlin/src/gcode/gcode.h Marlin/src/gcode/parser.h \
- Marlin/src/feature/bedlevel/bedlevel.h \
- Marlin/src/feature/bedlevel/mbl/mesh_bed_leveling.h \
- Marlin/src/pins/sensitive_pins.h
+ Marlin/src/feature/bedlevel/bedlevel.h Marlin/src/pins/sensitive_pins.h
 
 Marlin/src/MarlinCore.h:
 
@@ -348,6 +346,8 @@ Marlin/src/module/planner.h:
 
 Marlin/src/module/../gcode/queue.h:
 
+Marlin/src/module/../libs/vector_3.h:
+
 Marlin/src/module/endstops.h:
 
 Marlin/src/module/temperature.h:
@@ -459,7 +459,5 @@ Marlin/src/gcode/gcode.h:
 Marlin/src/gcode/parser.h:
 
 Marlin/src/feature/bedlevel/bedlevel.h:
-
-Marlin/src/feature/bedlevel/mbl/mesh_bed_leveling.h:
 
 Marlin/src/pins/sensitive_pins.h:
