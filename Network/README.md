@@ -63,7 +63,19 @@ sudo reboot
 Settings > Plugin Manager > Get more... > Search for specific plugins
 ### Navbar Temperature Plugin
 1. Search "Navbar Temp" and click "Install"
-2. Once complete, go to "Settings > Navbar Temperature Plugin > SoC name to display" and change it to "Pi"
+2. Reboot
+3. Once complete, go to "Settings > Navbar Temperature Plugin > SoC name to display" and change it to "Pi"
 ### OctoPrint-PrintTimeGenius
 1. Search "OctoPrint-PrintTimeGenius" and install
 - Note: Files preprocessed by OctoPrint-PrintTimeGenius will be marked with a yellow star
+### Firmware Updater
+1. Search "Firmware Updater" and install
+2. Reboot
+4. Follow the settings in the [repository documentation's](https://github.com/OctoPrint/OctoPrint-FirmwareUpdater#lpc1768-boards) LPC1768 section
+- Run the following command (if not already shown in the repository)
+```
+sudo chmod 777 /media/usb0
+```
+3. Settings > Firmware Updater > Wrench Icon:
+- Flash Method: LPC1768
+- Path to 
