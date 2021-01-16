@@ -63,19 +63,56 @@ sudo reboot
 Settings > Plugin Manager > Get more... > Search for specific plugins
 ### Navbar Temperature Plugin
 1. Search "Navbar Temp" and click "Install"
-2. Reboot
+2. Reboot before using
 3. Once complete, go to "Settings > Navbar Temperature Plugin > SoC name to display" and change it to "Pi"
 ### OctoPrint-PrintTimeGenius
 1. Search "OctoPrint-PrintTimeGenius" and install
 - Note: Files preprocessed by OctoPrint-PrintTimeGenius will be marked with a yellow star
+2. Reboot before using
 ### Firmware Updater
 1. Search "Firmware Updater" and install
 2. Reboot
-4. Follow the settings in the [repository documentation's](https://github.com/OctoPrint/OctoPrint-FirmwareUpdater#lpc1768-boards) LPC1768 section
+3. Follow the settings in the [repository documentation's](https://github.com/OctoPrint/OctoPrint-FirmwareUpdater#lpc1768-boards) LPC1768 section
 - Run the following command (if not already shown in the repository)
 ```
 sudo chmod 777 /media/usb0
 ```
-3. Settings > Firmware Updater > Wrench Icon:
+4. Settings > Firmware Updater > Wrench Icon:
 - Flash Method: LPC1768
-- Path to 
+- Path to firmware folder: 
+```
+/media/usb/
+```
+- Clicking "Test" should show "Path is valid". If "Path is not writeable" is shown, repeat steps 3 and 4.
+- Check "Enable Navbar Icon" box
+5. Reboot before using
+### OctoPrint-GitFiles
+1. Search "OctoPrint-GitFiles" and install
+2. Reboot
+3. Set up SSH for cloning into Github repository
+```
+ssh pi@printer##
+```
+```
+ssh-keygen
+/home/pi/.ssh/github
+<enter passphrase if desired>
+cat ~/.ssh/id_rsa.pub
+```
+- Copy everything except "pi@printer##"
+4. Add the SSH key to your github account
+- Github.com > Account icon > Settings > SSH and GPG Keys > New SSH key
+- Name: "printer##"
+- Key: Paste the key copied from step 3
+5. Octoprint > Settings > GitFiles
+- Paste the SSH url into the URL field
+- Rename "gitfiles" to "Products"
+
+### Continuous Print
+1. Search "Continuous Print" and install
+2. Reboot
+
+### Themify
+1. Search "Themify" and install
+2. Reboot
+3. Choose a theme (discoranged!) in Settings > Themify > Theme
