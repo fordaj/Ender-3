@@ -122,6 +122,12 @@ cat ~/.ssh/id_rsa.pub
 2. Reboot before using
 3. Once complete, go to "Settings > Navbar Temperature Plugin > SoC name to display" and change it to "Pi"
 
+### OctoPod Notifications
+1. Search "OctoPod" and install
+2. Reboot
+3. Display progress: 100%
+4. Set all other degrees/times to 0
+
 ### OctoPrint-PrintTimeGenius
 1. Search "OctoPrint-PrintTimeGenius" and install
 - Note: Files preprocessed by OctoPrint-PrintTimeGenius will be marked with a yellow star
