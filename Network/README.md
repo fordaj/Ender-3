@@ -101,9 +101,9 @@ ssh pi@printer##
 ```
 ```
 ssh-keygen
-/home/pi/.ssh/github
+<enter for id_rsa>
 <enter passphrase if desired>
-cat ~/.ssh/github.pub
+cat ~/.ssh/id_rsa.pub
 ```
 - Copy everything except "pi@printer##"
 4. Add the SSH key to your github account
