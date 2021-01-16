@@ -67,14 +67,16 @@ sudo reboot
 
 # Plugins
 Settings > Plugin Manager > Get more... > Search for specific plugins
-### Navbar Temperature Plugin
-1. Search "Navbar Temp" and click "Install"
-2. Reboot before using
-3. Once complete, go to "Settings > Navbar Temperature Plugin > SoC name to display" and change it to "Pi"
-### OctoPrint-PrintTimeGenius
-1. Search "OctoPrint-PrintTimeGenius" and install
-- Note: Files preprocessed by OctoPrint-PrintTimeGenius will be marked with a yellow star
-2. Reboot before using
+
+### Continuous Print
+1. Search "Continuous Print" and install
+2. Reboot
+
+### Cost estimator
+1. Search "Cost estimator" and install
+2. Reboot
+3. Configure cost based on volumetric flow rate **NEEDS UPDATED**
+
 ### Firmware Updater
 1. Search "Firmware Updater" and install
 2. Reboot
@@ -92,7 +94,8 @@ sudo chmod 777 /media/usb0
 - Clicking "Test" should show "Path is valid". If "Path is not writeable" is shown, repeat steps 3 and 4.
 - Check "Enable Navbar Icon" box
 5. Reboot before using
-### OctoPrint-GitFiles
+
+### GitFiles
 1. Search "OctoPrint-GitFiles" and install
 2. Reboot
 3. Set up SSH for cloning into Github repository
@@ -114,16 +117,22 @@ cat ~/.ssh/id_rsa.pub
 - Paste the SSH url into the URL field
 - Rename "gitfiles" to "Products"
 
-### Continuous Print
-1. Search "Continuous Print" and install
-2. Reboot
+### Navbar Temperature Plugin
+1. Search "Navbar Temp" and click "Install"
+2. Reboot before using
+3. Once complete, go to "Settings > Navbar Temperature Plugin > SoC name to display" and change it to "Pi"
+
+### OctoPrint-PrintTimeGenius
+1. Search "OctoPrint-PrintTimeGenius" and install
+- Note: Files preprocessed by OctoPrint-PrintTimeGenius will be marked with a yellow star
+2. Reboot before using
 
 ### Themeify
 1. Search "Themeify" and install
 2. Reboot
 3. Choose a theme (discoranged!) in Settings > Themeify > Theme
 
-### Cost estimator
-1. Search "Cost estimator" and install
-2. Reboot
-3. Configure cost based on volumetric flow rate **NEEDS UPDATED**
+
+
+
+
