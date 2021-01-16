@@ -1,4 +1,7 @@
-# Octoprint Configuration
+# Octoprint
+This README details the setup and configuration of Octoprint on a Raspberry Pi 3 and up.
+
+# Raspberry Pi Setup
 
 ### Preparation
 - Download and install [Etcher](https://www.balena.io/etcher/)
@@ -43,6 +46,24 @@ ssh pi@printer##
 sudo reboot
 ```
 
-### Octoprint Setup
+
+
+
+# Octoprint Setup
 1. Follow the setup prompt, with a username and password login
 2. Change printer name accordingly
+3. In the dashboard, check the "Auto-connect on server startup" box
+### Appearance
+1. Change "Title" to the name of the printer
+2. Change the color however you'd like
+
+
+
+# Plugins
+Settings > Plugin Manager > Get more... > Search for specific plugins
+### Navbar Temperature Plugin
+1. Search "Navbar Temp" and click "Install"
+2. Once complete, go to "Settings > Navbar Temperature Plugin > SoC name to display" and change it to "Pi"
+### OctoPrint-PrintTimeGenius
+1. Search "OctoPrint-PrintTimeGenius" and install
+- Note: Files preprocessed by OctoPrint-PrintTimeGenius will be marked with a yellow star
