@@ -118,7 +118,12 @@ cat ~/.ssh/id_rsa.pub
 1. Search "Continuous Print" and install
 2. Reboot
 
-### Themify
-1. Search "Themify" and install
+### Themeify
+1. Search "Themeify" and install
 2. Reboot
-3. Choose a theme (discoranged!) in Settings > Themify > Theme
+3. Choose a theme (discoranged!) in Settings > Themeify > Theme
+
+### Cost estimator
+1. Search "Cost estimator" and install
+2. Reboot
+3. Configure cost based on volumetric flow rate **NEEDS UPDATED**
