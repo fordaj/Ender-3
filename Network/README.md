@@ -51,7 +51,13 @@ sudo reboot
 
 # Octoprint Setup
 1. Follow the setup prompt, with a username and password login
-2. Change printer name accordingly
+2. Keep Access Control Enabled
+3. Disable Anonymous Usage Tracking
+4. Test host & port, and Enable Connectivity Check
+5. Enable Plugin Blacklist Processing
+6. Name the printer and model
+7. Width and Depth: 235mm, Height: 250mm
+8. Nozzle Diameter: 1.2mm
 3. In the dashboard, check the "Auto-connect on server startup" box
 ### Appearance
 1. Change "Title" to the name of the printer
@@ -97,7 +103,7 @@ ssh pi@printer##
 ssh-keygen
 /home/pi/.ssh/github
 <enter passphrase if desired>
-cat ~/.ssh/id_rsa.pub
+cat ~/.ssh/github.pub
 ```
 - Copy everything except "pi@printer##"
 4. Add the SSH key to your github account
