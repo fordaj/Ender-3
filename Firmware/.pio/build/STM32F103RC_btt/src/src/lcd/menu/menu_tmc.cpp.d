@@ -119,6 +119,7 @@
  Marlin/src/lcd/menu/../../module/temperature.h \
  Marlin/src/lcd/menu/../../module/thermistor/thermistors.h \
  Marlin/src/lcd/menu/../../module/thermistor/thermistor_1.h \
+ Marlin/src/lcd/menu/../../module/thermistor/thermistor_5.h \
  Marlin/src/lcd/menu/../../module/stepper/indirection.h \
  Marlin/src/lcd/menu/../../module/stepper/trinamic.h \
  .pio/libdeps/STM32F103RC_btt/TMCStepper/src/TMCStepper.h \
@@ -385,6 +386,8 @@ Marlin/src/lcd/menu/../../module/temperature.h:
 Marlin/src/lcd/menu/../../module/thermistor/thermistors.h:
 
 Marlin/src/lcd/menu/../../module/thermistor/thermistor_1.h:
+
+Marlin/src/lcd/menu/../../module/thermistor/thermistor_5.h:
 
 Marlin/src/lcd/menu/../../module/stepper/indirection.h:
 

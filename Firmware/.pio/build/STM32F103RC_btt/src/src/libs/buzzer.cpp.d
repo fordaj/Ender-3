@@ -94,7 +94,8 @@
  Marlin/src/libs/../inc/../core/serial.h Marlin/src/libs/buzzer.h \
  Marlin/src/libs/circularqueue.h Marlin/src/libs/../module/temperature.h \
  Marlin/src/libs/../module/thermistor/thermistors.h \
- Marlin/src/libs/../module/thermistor/thermistor_1.h
+ Marlin/src/libs/../module/thermistor/thermistor_1.h \
+ Marlin/src/libs/../module/thermistor/thermistor_5.h
 
 Marlin/src/libs/../inc/MarlinConfig.h:
 
@@ -291,3 +292,5 @@ Marlin/src/libs/../module/temperature.h:
 Marlin/src/libs/../module/thermistor/thermistors.h:
 
 Marlin/src/libs/../module/thermistor/thermistor_1.h:
+
+Marlin/src/libs/../module/thermistor/thermistor_5.h:

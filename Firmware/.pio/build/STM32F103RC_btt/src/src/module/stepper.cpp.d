@@ -140,6 +140,7 @@
  Marlin/src/module/endstops.h Marlin/src/module/temperature.h \
  Marlin/src/module/thermistor/thermistors.h \
  Marlin/src/module/thermistor/thermistor_1.h \
+ Marlin/src/module/thermistor/thermistor_5.h \
  Marlin/src/module/../HAL/shared/Delay.h
 
 Marlin/src/module/stepper.h:
@@ -429,5 +430,7 @@ Marlin/src/module/temperature.h:
 Marlin/src/module/thermistor/thermistors.h:
 
 Marlin/src/module/thermistor/thermistor_1.h:
+
+Marlin/src/module/thermistor/thermistor_5.h:
 
 Marlin/src/module/../HAL/shared/Delay.h:

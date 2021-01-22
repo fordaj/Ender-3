@@ -111,6 +111,7 @@
  Marlin/src/lcd/../module/temperature.h \
  Marlin/src/lcd/../module/thermistor/thermistors.h \
  Marlin/src/lcd/../module/thermistor/thermistor_1.h \
+ Marlin/src/lcd/../module/thermistor/thermistor_5.h \
  Marlin/src/lcd/../module/planner.h Marlin/src/lcd/../module/settings.h \
  Marlin/src/lcd/../module/../HAL/shared/eeprom_api.h \
  Marlin/src/lcd/../module/../HAL/shared/../../libs/crc16.h \
@@ -382,6 +383,8 @@ Marlin/src/lcd/../module/temperature.h:
 Marlin/src/lcd/../module/thermistor/thermistors.h:
 
 Marlin/src/lcd/../module/thermistor/thermistor_1.h:
+
+Marlin/src/lcd/../module/thermistor/thermistor_5.h:
 
 Marlin/src/lcd/../module/planner.h:
 

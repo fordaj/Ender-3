@@ -143,10 +143,11 @@
  Marlin/src/module/temperature.h \
  Marlin/src/module/thermistor/thermistors.h \
  Marlin/src/module/thermistor/thermistor_1.h \
+ Marlin/src/module/thermistor/thermistor_5.h \
  Marlin/src/module/../libs/vector_3.h Marlin/src/module/../gcode/gcode.h \
  Marlin/src/module/../gcode/parser.h Marlin/src/module/probe.h \
  Marlin/src/module/../feature/bedlevel/bedlevel.h \
- Marlin/src/module/../feature/bedlevel/abl/abl.h \
+ Marlin/src/module/../feature/bedlevel/mbl/mesh_bed_leveling.h \
  Marlin/src/module/../feature/fwretract.h \
  Marlin/src/module/../feature/controllerfan.h \
  Marlin/src/module/../core/debug_out.h \
@@ -446,6 +447,8 @@ Marlin/src/module/thermistor/thermistors.h:
 
 Marlin/src/module/thermistor/thermistor_1.h:
 
+Marlin/src/module/thermistor/thermistor_5.h:
+
 Marlin/src/module/../libs/vector_3.h:
 
 Marlin/src/module/../gcode/gcode.h:
@@ -456,7 +459,7 @@ Marlin/src/module/probe.h:
 
 Marlin/src/module/../feature/bedlevel/bedlevel.h:
 
-Marlin/src/module/../feature/bedlevel/abl/abl.h:
+Marlin/src/module/../feature/bedlevel/mbl/mesh_bed_leveling.h:
 
 Marlin/src/module/../feature/fwretract.h:
 

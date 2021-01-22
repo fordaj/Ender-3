@@ -434,7 +434,7 @@
 #if PRINTER_NUMBER == 1
   #define TEMP_SENSOR_0 1   // Stock thermistor
 #elif PRINTER_NUMBER == 2
-  #define TEMP_SENSOR_0 1   // HiLetgo thermistor
+  #define TEMP_SENSOR_0 5   // E3D Thermistor
 #elif PRINTER_NUMBER == 3
   #define TEMP_SENSOR_0 1   // Stock thermistor
 #elif PRINTER_NUMBER == 4
@@ -521,10 +521,10 @@
     #define DEFAULT_Kd_LIST {  76.55,  76.55 }
   #else
     #if PRINTER_NUMBER == 2
-      // 12-25-2020 Winsin volcano block, 0.4mm nozzle clone, sock clone, Satsana fan shroud @ 220C for 15 cycles
-      #define DEFAULT_Kp 25.28
-      #define DEFAULT_Ki 2.34
-      #define DEFAULT_Kd 68.41
+      // 01-22-2021 E3D Hemera, 0.4mm E3D nozzle, E3D sock, Hemera Fan @ 210C for 15 cycles
+      #define DEFAULT_Kp 23.52
+      #define DEFAULT_Ki 1.81
+      #define DEFAULT_Kd 76.37
     #elif PRINTER_NUMBER == 3
       // 01-08-2021 Winsin volcano block, 1.2mm E3D nozzle, sock clone, Satsana fan shroud @ 260C for 15 cycles
       #define DEFAULT_Kp 32.38
@@ -796,7 +796,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
 #if PRINTER_NUMBER == 2
-  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 98.99}  // 12/20/2020: Single drive aluminum extruder, Capricorn bowden
+  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 409}  // 01/22/2020: E3D Hemera (Direct Drive 1.75mm 24V)
 #else
   #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
 #endif
@@ -903,7 +903,7 @@
 
 // Force the use of the probe for Z-axis homing
 #if PRINTER_NUMBER == 2
-  #define USE_PROBE_FOR_Z_HOMING
+  //#define USE_PROBE_FOR_Z_HOMING
 #else
   //#define USE_PROBE_FOR_Z_HOMING
 #endif
@@ -955,7 +955,7 @@
  *   (e.g., an inductive probe or a nozzle-based probe-switch.)
  */
 #if PRINTER_NUMBER == 2
-  #define FIX_MOUNTED_PROBE
+  //#define FIX_MOUNTED_PROBE
 #else
   //#define FIX_MOUNTED_PROBE
 #endif
@@ -1063,9 +1063,9 @@
  *     O-- FRONT --+
  */
 
-#if PRINTER_NUMBER == 2
-  #define NOZZLE_TO_PROBE_OFFSET { 4, 34, -2.5 }    // IR Probe on Satsana Remix
-#elif PRINTER_NUMBER == 3
+//#if PRINTER_NUMBER == 2
+  //#define NOZZLE_TO_PROBE_OFFSET { 4, 34, -2.5 }    // IR Probe on Satsana Remix
+#if PRINTER_NUMBER == 3
   #define NOZZLE_TO_PROBE_OFFSET { -39.5, -7.2, -2.625 }    // BLTouch Clone
 #else
   #define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
@@ -1325,7 +1325,8 @@
 #if PRINTER_NUMBER == 1
   #define MESH_BED_LEVELING         // Manual bed leveling
 #elif PRINTER_NUMBER == 2
-  #define AUTO_BED_LEVELING_BILINEAR // Bilinear bed leveling
+  //#define AUTO_BED_LEVELING_BILINEAR // Bilinear bed leveling
+  #define MESH_BED_LEVELING         // Manual bed leveling
 #elif PRINTER_NUMBER == 3
   #define MESH_BED_LEVELING         // Manual bed leveling
 #elif PRINTER_NUMBER == 4

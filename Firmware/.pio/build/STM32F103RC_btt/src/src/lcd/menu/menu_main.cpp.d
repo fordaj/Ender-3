@@ -119,6 +119,7 @@
  Marlin/src/lcd/menu/../../module/temperature.h \
  Marlin/src/lcd/menu/../../module/thermistor/thermistors.h \
  Marlin/src/lcd/menu/../../module/thermistor/thermistor_1.h \
+ Marlin/src/lcd/menu/../../module/thermistor/thermistor_5.h \
  Marlin/src/lcd/menu/../../module/printcounter.h \
  Marlin/src/lcd/menu/../../module/../libs/stopwatch.h \
  Marlin/src/lcd/menu/../../module/../libs/duration_t.h \
@@ -389,6 +390,8 @@ Marlin/src/lcd/menu/../../module/temperature.h:
 Marlin/src/lcd/menu/../../module/thermistor/thermistors.h:
 
 Marlin/src/lcd/menu/../../module/thermistor/thermistor_1.h:
+
+Marlin/src/lcd/menu/../../module/thermistor/thermistor_5.h:
 
 Marlin/src/lcd/menu/../../module/printcounter.h:
 

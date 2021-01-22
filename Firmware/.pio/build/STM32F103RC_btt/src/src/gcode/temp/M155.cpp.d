@@ -96,7 +96,8 @@
  Marlin/src/gcode/temp/../gcode.h Marlin/src/gcode/temp/../parser.h \
  Marlin/src/gcode/temp/../../module/temperature.h \
  Marlin/src/gcode/temp/../../module/thermistor/thermistors.h \
- Marlin/src/gcode/temp/../../module/thermistor/thermistor_1.h
+ Marlin/src/gcode/temp/../../module/thermistor/thermistor_1.h \
+ Marlin/src/gcode/temp/../../module/thermistor/thermistor_5.h
 
 Marlin/src/gcode/temp/../../inc/MarlinConfig.h:
 
@@ -293,3 +294,5 @@ Marlin/src/gcode/temp/../../module/temperature.h:
 Marlin/src/gcode/temp/../../module/thermistor/thermistors.h:
 
 Marlin/src/gcode/temp/../../module/thermistor/thermistor_1.h:
+
+Marlin/src/gcode/temp/../../module/thermistor/thermistor_5.h:

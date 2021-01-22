@@ -96,7 +96,7 @@
  Marlin/src/gcode/bedlevel/../gcode.h \
  Marlin/src/gcode/bedlevel/../parser.h \
  Marlin/src/gcode/bedlevel/../../feature/bedlevel/bedlevel.h \
- Marlin/src/gcode/bedlevel/../../feature/bedlevel/abl/abl.h \
+ Marlin/src/gcode/bedlevel/../../feature/bedlevel/mbl/mesh_bed_leveling.h \
  Marlin/src/gcode/bedlevel/../../module/planner.h \
  Marlin/src/gcode/bedlevel/../../module/../MarlinCore.h \
  Marlin/src/gcode/bedlevel/../../module/motion.h \
@@ -298,7 +298,7 @@ Marlin/src/gcode/bedlevel/../parser.h:
 
 Marlin/src/gcode/bedlevel/../../feature/bedlevel/bedlevel.h:
 
-Marlin/src/gcode/bedlevel/../../feature/bedlevel/abl/abl.h:
+Marlin/src/gcode/bedlevel/../../feature/bedlevel/mbl/mesh_bed_leveling.h:
 
 Marlin/src/gcode/bedlevel/../../module/planner.h:
 

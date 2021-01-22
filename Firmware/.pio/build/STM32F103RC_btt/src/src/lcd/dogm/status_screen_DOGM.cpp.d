@@ -121,6 +121,7 @@
  Marlin/src/lcd/dogm/../../module/temperature.h \
  Marlin/src/lcd/dogm/../../module/thermistor/thermistors.h \
  Marlin/src/lcd/dogm/../../module/thermistor/thermistor_1.h \
+ Marlin/src/lcd/dogm/../../module/thermistor/thermistor_5.h \
  Marlin/src/lcd/dogm/../../module/printcounter.h \
  Marlin/src/lcd/dogm/../../module/../libs/stopwatch.h \
  Marlin/src/lcd/dogm/../../module/../libs/duration_t.h
@@ -368,6 +369,8 @@ Marlin/src/lcd/dogm/../../module/temperature.h:
 Marlin/src/lcd/dogm/../../module/thermistor/thermistors.h:
 
 Marlin/src/lcd/dogm/../../module/thermistor/thermistor_1.h:
+
+Marlin/src/lcd/dogm/../../module/thermistor/thermistor_5.h:
 
 Marlin/src/lcd/dogm/../../module/printcounter.h:
 

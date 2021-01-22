@@ -146,6 +146,7 @@
  Marlin/src/feature/../module/temperature.h \
  Marlin/src/feature/../module/thermistor/thermistors.h \
  Marlin/src/feature/../module/thermistor/thermistor_1.h \
+ Marlin/src/feature/../module/thermistor/thermistor_5.h \
  Marlin/src/feature/../core/debug_out.h
 
 Marlin/src/feature/../inc/MarlinConfigPre.h:
@@ -443,5 +444,7 @@ Marlin/src/feature/../module/temperature.h:
 Marlin/src/feature/../module/thermistor/thermistors.h:
 
 Marlin/src/feature/../module/thermistor/thermistor_1.h:
+
+Marlin/src/feature/../module/thermistor/thermistor_5.h:
 
 Marlin/src/feature/../core/debug_out.h:

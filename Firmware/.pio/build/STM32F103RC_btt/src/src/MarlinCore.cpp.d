@@ -94,7 +94,8 @@
  Marlin/src/module/../gcode/queue.h Marlin/src/module/endstops.h \
  Marlin/src/module/temperature.h \
  Marlin/src/module/thermistor/thermistors.h \
- Marlin/src/module/thermistor/thermistor_1.h Marlin/src/module/settings.h \
+ Marlin/src/module/thermistor/thermistor_1.h \
+ Marlin/src/module/thermistor/thermistor_5.h Marlin/src/module/settings.h \
  Marlin/src/module/../HAL/shared/eeprom_api.h \
  Marlin/src/module/../HAL/shared/../../libs/crc16.h \
  Marlin/src/module/printcounter.h Marlin/src/module/../libs/stopwatch.h \
@@ -143,7 +144,8 @@
  .pio/libdeps/STM32F103RC_btt/U8glib-HAL/src/clib/u8g.h \
  Marlin/src/gcode/gcode.h Marlin/src/gcode/parser.h \
  Marlin/src/feature/bedlevel/bedlevel.h \
- Marlin/src/feature/bedlevel/abl/abl.h Marlin/src/pins/sensitive_pins.h
+ Marlin/src/feature/bedlevel/mbl/mesh_bed_leveling.h \
+ Marlin/src/pins/sensitive_pins.h
 
 Marlin/src/MarlinCore.h:
 
@@ -355,6 +357,8 @@ Marlin/src/module/thermistor/thermistors.h:
 
 Marlin/src/module/thermistor/thermistor_1.h:
 
+Marlin/src/module/thermistor/thermistor_5.h:
+
 Marlin/src/module/settings.h:
 
 Marlin/src/module/../HAL/shared/eeprom_api.h:
@@ -459,6 +463,6 @@ Marlin/src/gcode/parser.h:
 
 Marlin/src/feature/bedlevel/bedlevel.h:
 
-Marlin/src/feature/bedlevel/abl/abl.h:
+Marlin/src/feature/bedlevel/mbl/mesh_bed_leveling.h:
 
 Marlin/src/pins/sensitive_pins.h:

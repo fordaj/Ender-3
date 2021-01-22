@@ -97,9 +97,10 @@
  Marlin/src/module/../gcode/queue.h Marlin/src/module/temperature.h \
  Marlin/src/module/thermistor/thermistors.h \
  Marlin/src/module/thermistor/thermistor_1.h \
+ Marlin/src/module/thermistor/thermistor_5.h \
  Marlin/src/module/../core/debug_out.h \
  Marlin/src/module/../feature/bedlevel/bedlevel.h \
- Marlin/src/module/../feature/bedlevel/abl/abl.h \
+ Marlin/src/module/../feature/bedlevel/mbl/mesh_bed_leveling.h \
  Marlin/src/module/../lcd/ultralcd.h \
  Marlin/src/module/../lcd/../libs/buzzer.h \
  Marlin/src/module/../lcd/../libs/circularqueue.h \
@@ -323,11 +324,13 @@ Marlin/src/module/thermistor/thermistors.h:
 
 Marlin/src/module/thermistor/thermistor_1.h:
 
+Marlin/src/module/thermistor/thermistor_5.h:
+
 Marlin/src/module/../core/debug_out.h:
 
 Marlin/src/module/../feature/bedlevel/bedlevel.h:
 
-Marlin/src/module/../feature/bedlevel/abl/abl.h:
+Marlin/src/module/../feature/bedlevel/mbl/mesh_bed_leveling.h:
 
 Marlin/src/module/../lcd/ultralcd.h:
 

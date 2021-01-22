@@ -119,9 +119,10 @@
  Marlin/src/lcd/menu/../../module/temperature.h \
  Marlin/src/lcd/menu/../../module/thermistor/thermistors.h \
  Marlin/src/lcd/menu/../../module/thermistor/thermistor_1.h \
+ Marlin/src/lcd/menu/../../module/thermistor/thermistor_5.h \
  Marlin/src/lcd/menu/../../module/planner.h \
  Marlin/src/lcd/menu/../../feature/bedlevel/bedlevel.h \
- Marlin/src/lcd/menu/../../feature/bedlevel/abl/abl.h
+ Marlin/src/lcd/menu/../../feature/bedlevel/mbl/mesh_bed_leveling.h
 
 Marlin/src/lcd/menu/../../inc/MarlinConfigPre.h:
 
@@ -365,8 +366,10 @@ Marlin/src/lcd/menu/../../module/thermistor/thermistors.h:
 
 Marlin/src/lcd/menu/../../module/thermistor/thermistor_1.h:
 
+Marlin/src/lcd/menu/../../module/thermistor/thermistor_5.h:
+
 Marlin/src/lcd/menu/../../module/planner.h:
 
 Marlin/src/lcd/menu/../../feature/bedlevel/bedlevel.h:
 
-Marlin/src/lcd/menu/../../feature/bedlevel/abl/abl.h:
+Marlin/src/lcd/menu/../../feature/bedlevel/mbl/mesh_bed_leveling.h:

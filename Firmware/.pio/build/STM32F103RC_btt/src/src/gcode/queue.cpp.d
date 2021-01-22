@@ -116,7 +116,8 @@
  Marlin/src/gcode/../module/planner.h \
  Marlin/src/gcode/../module/temperature.h \
  Marlin/src/gcode/../module/thermistor/thermistors.h \
- Marlin/src/gcode/../module/thermistor/thermistor_1.h
+ Marlin/src/gcode/../module/thermistor/thermistor_1.h \
+ Marlin/src/gcode/../module/thermistor/thermistor_5.h
 
 Marlin/src/gcode/queue.h:
 
@@ -359,3 +360,5 @@ Marlin/src/gcode/../module/temperature.h:
 Marlin/src/gcode/../module/thermistor/thermistors.h:
 
 Marlin/src/gcode/../module/thermistor/thermistor_1.h:
+
+Marlin/src/gcode/../module/thermistor/thermistor_5.h:

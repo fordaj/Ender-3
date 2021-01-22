@@ -97,6 +97,7 @@
  Marlin/src/gcode/temp/../../module/temperature.h \
  Marlin/src/gcode/temp/../../module/thermistor/thermistors.h \
  Marlin/src/gcode/temp/../../module/thermistor/thermistor_1.h \
+ Marlin/src/gcode/temp/../../module/thermistor/thermistor_5.h \
  Marlin/src/gcode/temp/../../module/motion.h \
  Marlin/src/gcode/temp/../../lcd/ultralcd.h \
  Marlin/src/gcode/temp/../../lcd/../libs/buzzer.h \
@@ -317,6 +318,8 @@ Marlin/src/gcode/temp/../../module/temperature.h:
 Marlin/src/gcode/temp/../../module/thermistor/thermistors.h:
 
 Marlin/src/gcode/temp/../../module/thermistor/thermistor_1.h:
+
+Marlin/src/gcode/temp/../../module/thermistor/thermistor_5.h:
 
 Marlin/src/gcode/temp/../../module/motion.h:
 

@@ -100,6 +100,7 @@
  Marlin/src/gcode/feature/pause/../../../module/temperature.h \
  Marlin/src/gcode/feature/pause/../../../module/thermistor/thermistors.h \
  Marlin/src/gcode/feature/pause/../../../module/thermistor/thermistor_1.h \
+ Marlin/src/gcode/feature/pause/../../../module/thermistor/thermistor_5.h \
  Marlin/src/gcode/feature/pause/../../../feature/pause.h \
  Marlin/src/gcode/feature/pause/../../../feature/../libs/nozzle.h \
  Marlin/src/gcode/feature/pause/../../../lcd/ultralcd.h \
@@ -319,6 +320,8 @@ Marlin/src/gcode/feature/pause/../../../module/temperature.h:
 Marlin/src/gcode/feature/pause/../../../module/thermistor/thermistors.h:
 
 Marlin/src/gcode/feature/pause/../../../module/thermistor/thermistor_1.h:
+
+Marlin/src/gcode/feature/pause/../../../module/thermistor/thermistor_5.h:
 
 Marlin/src/gcode/feature/pause/../../../feature/pause.h:
 

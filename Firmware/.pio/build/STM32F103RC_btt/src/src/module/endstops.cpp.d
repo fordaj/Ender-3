@@ -139,7 +139,8 @@
  .pio/libdeps/STM32F103RC_btt/U8glib-HAL/src/clib/u8g.h \
  Marlin/src/module/temperature.h \
  Marlin/src/module/thermistor/thermistors.h \
- Marlin/src/module/thermistor/thermistor_1.h
+ Marlin/src/module/thermistor/thermistor_1.h \
+ Marlin/src/module/thermistor/thermistor_5.h
 
 Marlin/src/module/endstops.h:
 
@@ -428,3 +429,5 @@ Marlin/src/module/temperature.h:
 Marlin/src/module/thermistor/thermistors.h:
 
 Marlin/src/module/thermistor/thermistor_1.h:
+
+Marlin/src/module/thermistor/thermistor_5.h:

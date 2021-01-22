@@ -94,7 +94,7 @@
  Marlin/src/feature/bedlevel/../../inc/../core/../core/millis_t.h \
  Marlin/src/feature/bedlevel/../../inc/../core/serial.h \
  Marlin/src/feature/bedlevel/bedlevel.h \
- Marlin/src/feature/bedlevel/abl/abl.h \
+ Marlin/src/feature/bedlevel/mbl/mesh_bed_leveling.h \
  Marlin/src/feature/bedlevel/../../module/planner.h \
  Marlin/src/feature/bedlevel/../../module/../MarlinCore.h \
  Marlin/src/feature/bedlevel/../../module/motion.h \
@@ -308,7 +308,7 @@ Marlin/src/feature/bedlevel/../../inc/../core/serial.h:
 
 Marlin/src/feature/bedlevel/bedlevel.h:
 
-Marlin/src/feature/bedlevel/abl/abl.h:
+Marlin/src/feature/bedlevel/mbl/mesh_bed_leveling.h:
 
 Marlin/src/feature/bedlevel/../../module/planner.h:
 

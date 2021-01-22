@@ -94,7 +94,8 @@
  Marlin/src/module/thermistor/../../inc/../core/utility.h \
  Marlin/src/module/thermistor/../../inc/../core/../core/millis_t.h \
  Marlin/src/module/thermistor/../../inc/../core/serial.h \
- Marlin/src/module/thermistor/thermistor_1.h Marlin/src/module/endstops.h \
+ Marlin/src/module/thermistor/thermistor_1.h \
+ Marlin/src/module/thermistor/thermistor_5.h Marlin/src/module/endstops.h \
  Marlin/src/module/../MarlinCore.h Marlin/src/module/planner.h \
  Marlin/src/module/motion.h Marlin/src/module/../gcode/queue.h \
  Marlin/src/module/../HAL/shared/Delay.h \
@@ -311,6 +312,8 @@ Marlin/src/module/thermistor/../../inc/../core/../core/millis_t.h:
 Marlin/src/module/thermistor/../../inc/../core/serial.h:
 
 Marlin/src/module/thermistor/thermistor_1.h:
+
+Marlin/src/module/thermistor/thermistor_5.h:
 
 Marlin/src/module/endstops.h:
 

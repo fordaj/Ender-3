@@ -120,7 +120,7 @@
  Marlin/src/lcd/menu/../../module/../libs/stopwatch.h \
  Marlin/src/lcd/menu/../../module/../libs/duration_t.h \
  Marlin/src/lcd/menu/../../feature/bedlevel/bedlevel.h \
- Marlin/src/lcd/menu/../../feature/bedlevel/abl/abl.h
+ Marlin/src/lcd/menu/../../feature/bedlevel/mbl/mesh_bed_leveling.h
 
 Marlin/src/lcd/menu/../../inc/MarlinConfigPre.h:
 
@@ -366,4 +366,4 @@ Marlin/src/lcd/menu/../../module/../libs/duration_t.h:
 
 Marlin/src/lcd/menu/../../feature/bedlevel/bedlevel.h:
 
-Marlin/src/lcd/menu/../../feature/bedlevel/abl/abl.h:
+Marlin/src/lcd/menu/../../feature/bedlevel/mbl/mesh_bed_leveling.h:
