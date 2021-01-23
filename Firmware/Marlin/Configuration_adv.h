@@ -1656,11 +1656,8 @@
  * See https://marlinfw.org/docs/features/lin_advance.html for full instructions.
  */
 
-#if PRINTER_NUMBER == 2
-  //#define LIN_ADVANCE
-#else
-  //#define LIN_ADVANCE
-#endif
+
+//#define LIN_ADVANCE
 
 #if ENABLED(LIN_ADVANCE)
   //#define EXTRA_LIN_ADVANCE_K // Enable for second linear advance constants

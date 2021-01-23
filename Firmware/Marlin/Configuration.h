@@ -820,7 +820,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
 #if PRINTER_NUMBER == 2
-  #define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 3000 }   //Hemera with V6 Hotend
+  #define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 5000 }   //Hemera with V6 Hotend
 #else
   //#define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 5000 }
 #endif
