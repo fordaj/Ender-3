@@ -91,7 +91,8 @@
  /Users/andyford/.platformio/packages/framework-arduinoststm32-maple/STM32F1/variants/generic_stm32f103r/pins_arduino.h \
  /Users/andyford/.platformio/packages/framework-arduinoststm32-maple/STM32F1/variants/generic_stm32f103r/variant.h \
  Marlin/src/module/motion.h Marlin/src/module/planner.h \
- Marlin/src/module/../gcode/queue.h Marlin/src/module/endstops.h \
+ Marlin/src/module/../gcode/queue.h \
+ Marlin/src/module/../feature/fwretract.h Marlin/src/module/endstops.h \
  Marlin/src/module/temperature.h \
  Marlin/src/module/thermistor/thermistors.h \
  Marlin/src/module/thermistor/thermistor_1.h \
@@ -348,6 +349,8 @@ Marlin/src/module/motion.h:
 Marlin/src/module/planner.h:
 
 Marlin/src/module/../gcode/queue.h:
+
+Marlin/src/module/../feature/fwretract.h:
 
 Marlin/src/module/endstops.h:
 

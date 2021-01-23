@@ -95,6 +95,7 @@
  Marlin/src/module/../inc/../core/serial.h Marlin/src/module/endstops.h \
  Marlin/src/module/stepper.h Marlin/src/module/planner.h \
  Marlin/src/module/../MarlinCore.h Marlin/src/module/../gcode/queue.h \
+ Marlin/src/module/../feature/fwretract.h \
  Marlin/src/module/stepper/indirection.h \
  Marlin/src/module/stepper/trinamic.h \
  .pio/libdeps/STM32F103RC_btt/TMCStepper/src/TMCStepper.h \
@@ -343,6 +344,8 @@ Marlin/src/module/planner.h:
 Marlin/src/module/../MarlinCore.h:
 
 Marlin/src/module/../gcode/queue.h:
+
+Marlin/src/module/../feature/fwretract.h:
 
 Marlin/src/module/stepper/indirection.h:
 

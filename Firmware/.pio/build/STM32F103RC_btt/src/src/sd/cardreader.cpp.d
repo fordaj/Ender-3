@@ -106,6 +106,7 @@
  .pio/libdeps/STM32F103RC_btt/U8glib-HAL/src/clib/u8g.h \
  Marlin/src/sd/../module/planner.h \
  Marlin/src/sd/../module/../gcode/queue.h \
+ Marlin/src/sd/../module/../feature/fwretract.h \
  Marlin/src/sd/../module/printcounter.h \
  Marlin/src/sd/../module/../libs/stopwatch.h \
  Marlin/src/sd/../module/../libs/duration_t.h \
@@ -368,6 +369,8 @@ Marlin/src/sd/../lcd/dogm/u8g_fontutf8.h:
 Marlin/src/sd/../module/planner.h:
 
 Marlin/src/sd/../module/../gcode/queue.h:
+
+Marlin/src/sd/../module/../feature/fwretract.h:
 
 Marlin/src/sd/../module/printcounter.h:
 

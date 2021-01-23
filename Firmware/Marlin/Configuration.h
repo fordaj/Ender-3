@@ -796,7 +796,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
 #if PRINTER_NUMBER == 2
-  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 409}  // 01/22/2020: E3D Hemera (Direct Drive 1.75mm 24V)
+  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 397}  // 01/22/2020: E3D Hemera (Direct Drive 1.75mm 24V)
 #else
   #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
 #endif
@@ -819,8 +819,11 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 5000 }
-
+#if PRINTER_NUMBER == 2
+  #define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 3000 }   //Hemera with V6 Hotend
+#else
+  //#define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 5000 }
+#endif
 //#define LIMITED_MAX_ACCEL_EDITING     // Limit edit via M201 or LCD to DEFAULT_MAX_ACCELERATION * 2
 #if ENABLED(LIMITED_MAX_ACCEL_EDITING)
   #define MAX_ACCEL_EDIT_VALUES       { 6000, 6000, 200, 20000 } // ...or, set your own edit limits

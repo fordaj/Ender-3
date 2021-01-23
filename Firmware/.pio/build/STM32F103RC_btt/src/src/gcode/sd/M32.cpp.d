@@ -104,7 +104,8 @@
  Marlin/src/gcode/sd/../../module/planner.h \
  Marlin/src/gcode/sd/../../module/../MarlinCore.h \
  Marlin/src/gcode/sd/../../module/motion.h \
- Marlin/src/gcode/sd/../../module/../gcode/queue.h
+ Marlin/src/gcode/sd/../../module/../gcode/queue.h \
+ Marlin/src/gcode/sd/../../module/../feature/fwretract.h
 
 Marlin/src/gcode/sd/../../inc/MarlinConfig.h:
 
@@ -319,3 +320,5 @@ Marlin/src/gcode/sd/../../module/../MarlinCore.h:
 Marlin/src/gcode/sd/../../module/motion.h:
 
 Marlin/src/gcode/sd/../../module/../gcode/queue.h:
+
+Marlin/src/gcode/sd/../../module/../feature/fwretract.h:

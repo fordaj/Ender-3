@@ -99,6 +99,7 @@
  Marlin/src/feature/bedlevel/../../module/../MarlinCore.h \
  Marlin/src/feature/bedlevel/../../module/motion.h \
  Marlin/src/feature/bedlevel/../../module/../gcode/queue.h \
+ Marlin/src/feature/bedlevel/../../module/../feature/fwretract.h \
  Marlin/src/feature/bedlevel/../../lcd/ultralcd.h \
  Marlin/src/feature/bedlevel/../../lcd/../libs/buzzer.h \
  Marlin/src/feature/bedlevel/../../lcd/../libs/circularqueue.h \
@@ -317,6 +318,8 @@ Marlin/src/feature/bedlevel/../../module/../MarlinCore.h:
 Marlin/src/feature/bedlevel/../../module/motion.h:
 
 Marlin/src/feature/bedlevel/../../module/../gcode/queue.h:
+
+Marlin/src/feature/bedlevel/../../module/../feature/fwretract.h:
 
 Marlin/src/feature/bedlevel/../../lcd/ultralcd.h:
 

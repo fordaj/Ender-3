@@ -99,6 +99,7 @@
  Marlin/src/gcode/motion/../../module/../MarlinCore.h \
  Marlin/src/gcode/motion/../../module/motion.h \
  Marlin/src/gcode/motion/../../module/../gcode/queue.h \
+ Marlin/src/gcode/motion/../../module/../feature/fwretract.h \
  Marlin/src/gcode/motion/../../module/stepper/indirection.h \
  Marlin/src/gcode/motion/../../module/stepper/trinamic.h \
  .pio/libdeps/STM32F103RC_btt/TMCStepper/src/TMCStepper.h \
@@ -341,6 +342,8 @@ Marlin/src/gcode/motion/../../module/../MarlinCore.h:
 Marlin/src/gcode/motion/../../module/motion.h:
 
 Marlin/src/gcode/motion/../../module/../gcode/queue.h:
+
+Marlin/src/gcode/motion/../../module/../feature/fwretract.h:
 
 Marlin/src/gcode/motion/../../module/stepper/indirection.h:
 

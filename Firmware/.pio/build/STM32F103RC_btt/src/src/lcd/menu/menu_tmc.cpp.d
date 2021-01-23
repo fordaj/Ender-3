@@ -143,7 +143,8 @@
  .pio/libdeps/STM32F103RC_btt/TMCStepper/src/source/TMC2209_bitfields.h \
  .pio/libdeps/STM32F103RC_btt/TMCStepper/src/source/TMC2660_bitfields.h \
  Marlin/src/lcd/menu/../../module/stepper/../../feature/tmc_util.h \
- Marlin/src/lcd/menu/../../module/stepper/../../feature/../module/planner.h
+ Marlin/src/lcd/menu/../../module/stepper/../../feature/../module/planner.h \
+ Marlin/src/lcd/menu/../../module/stepper/../../feature/../module/../feature/fwretract.h
 
 Marlin/src/lcd/menu/../../inc/MarlinConfigPre.h:
 
@@ -436,3 +437,5 @@ Marlin/src/HAL/STM32F1/SPI.h:
 Marlin/src/lcd/menu/../../module/stepper/../../feature/tmc_util.h:
 
 Marlin/src/lcd/menu/../../module/stepper/../../feature/../module/planner.h:
+
+Marlin/src/lcd/menu/../../module/stepper/../../feature/../module/../feature/fwretract.h:

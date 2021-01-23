@@ -101,6 +101,7 @@
  Marlin/src/gcode/bedlevel/../../module/../MarlinCore.h \
  Marlin/src/gcode/bedlevel/../../module/motion.h \
  Marlin/src/gcode/bedlevel/../../module/../gcode/queue.h \
+ Marlin/src/gcode/bedlevel/../../module/../feature/fwretract.h \
  Marlin/src/gcode/bedlevel/../../module/probe.h \
  Marlin/src/gcode/bedlevel/../../module/settings.h \
  Marlin/src/gcode/bedlevel/../../module/../HAL/shared/eeprom_api.h \
@@ -307,6 +308,8 @@ Marlin/src/gcode/bedlevel/../../module/../MarlinCore.h:
 Marlin/src/gcode/bedlevel/../../module/motion.h:
 
 Marlin/src/gcode/bedlevel/../../module/../gcode/queue.h:
+
+Marlin/src/gcode/bedlevel/../../module/../feature/fwretract.h:
 
 Marlin/src/gcode/bedlevel/../../module/probe.h:
 

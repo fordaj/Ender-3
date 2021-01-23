@@ -98,6 +98,7 @@
  Marlin/src/module/thermistor/thermistor_5.h Marlin/src/module/endstops.h \
  Marlin/src/module/../MarlinCore.h Marlin/src/module/planner.h \
  Marlin/src/module/motion.h Marlin/src/module/../gcode/queue.h \
+ Marlin/src/module/../feature/fwretract.h \
  Marlin/src/module/../HAL/shared/Delay.h \
  Marlin/src/module/../lcd/ultralcd.h \
  Marlin/src/module/../lcd/../libs/buzzer.h \
@@ -324,6 +325,8 @@ Marlin/src/module/planner.h:
 Marlin/src/module/motion.h:
 
 Marlin/src/module/../gcode/queue.h:
+
+Marlin/src/module/../feature/fwretract.h:
 
 Marlin/src/module/../HAL/shared/Delay.h:
 

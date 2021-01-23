@@ -99,6 +99,7 @@
  Marlin/src/gcode/geometry/../../module/planner.h \
  Marlin/src/gcode/geometry/../../module/../MarlinCore.h \
  Marlin/src/gcode/geometry/../../module/../gcode/queue.h \
+ Marlin/src/gcode/geometry/../../module/../feature/fwretract.h \
  Marlin/src/gcode/geometry/../../module/stepper/indirection.h \
  Marlin/src/gcode/geometry/../../module/stepper/trinamic.h \
  .pio/libdeps/STM32F103RC_btt/TMCStepper/src/TMCStepper.h \
@@ -341,6 +342,8 @@ Marlin/src/gcode/geometry/../../module/planner.h:
 Marlin/src/gcode/geometry/../../module/../MarlinCore.h:
 
 Marlin/src/gcode/geometry/../../module/../gcode/queue.h:
+
+Marlin/src/gcode/geometry/../../module/../feature/fwretract.h:
 
 Marlin/src/gcode/geometry/../../module/stepper/indirection.h:
 

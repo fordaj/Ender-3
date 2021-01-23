@@ -94,7 +94,8 @@
  Marlin/src/module/../inc/../core/../core/millis_t.h \
  Marlin/src/module/../inc/../core/serial.h Marlin/src/module/motion.h \
  Marlin/src/module/planner.h Marlin/src/module/../MarlinCore.h \
- Marlin/src/module/../gcode/queue.h Marlin/src/module/temperature.h \
+ Marlin/src/module/../gcode/queue.h \
+ Marlin/src/module/../feature/fwretract.h Marlin/src/module/temperature.h \
  Marlin/src/module/thermistor/thermistors.h \
  Marlin/src/module/thermistor/thermistor_1.h \
  Marlin/src/module/thermistor/thermistor_5.h \
@@ -317,6 +318,8 @@ Marlin/src/module/planner.h:
 Marlin/src/module/../MarlinCore.h:
 
 Marlin/src/module/../gcode/queue.h:
+
+Marlin/src/module/../feature/fwretract.h:
 
 Marlin/src/module/temperature.h:
 

@@ -116,6 +116,7 @@
  Marlin/src/lcd/menu/../../libs/numtostr.h \
  Marlin/src/lcd/menu/../../module/planner.h \
  Marlin/src/lcd/menu/../../module/../gcode/queue.h \
+ Marlin/src/lcd/menu/../../module/../feature/fwretract.h \
  Marlin/src/lcd/menu/../../module/printcounter.h \
  Marlin/src/lcd/menu/../../module/../libs/stopwatch.h \
  Marlin/src/lcd/menu/../../module/../libs/duration_t.h \
@@ -357,6 +358,8 @@ Marlin/src/lcd/menu/../../libs/numtostr.h:
 Marlin/src/lcd/menu/../../module/planner.h:
 
 Marlin/src/lcd/menu/../../module/../gcode/queue.h:
+
+Marlin/src/lcd/menu/../../module/../feature/fwretract.h:
 
 Marlin/src/lcd/menu/../../module/printcounter.h:
 

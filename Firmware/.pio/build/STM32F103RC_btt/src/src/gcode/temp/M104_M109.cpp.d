@@ -103,6 +103,7 @@
  Marlin/src/gcode/temp/../../module/planner.h \
  Marlin/src/gcode/temp/../../module/../MarlinCore.h \
  Marlin/src/gcode/temp/../../module/../gcode/queue.h \
+ Marlin/src/gcode/temp/../../module/../feature/fwretract.h \
  Marlin/src/gcode/temp/../../lcd/ultralcd.h \
  Marlin/src/gcode/temp/../../lcd/../libs/buzzer.h \
  Marlin/src/gcode/temp/../../lcd/../libs/circularqueue.h \
@@ -331,6 +332,8 @@ Marlin/src/gcode/temp/../../module/planner.h:
 Marlin/src/gcode/temp/../../module/../MarlinCore.h:
 
 Marlin/src/gcode/temp/../../module/../gcode/queue.h:
+
+Marlin/src/gcode/temp/../../module/../feature/fwretract.h:
 
 Marlin/src/gcode/temp/../../lcd/ultralcd.h:
 

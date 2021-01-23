@@ -139,6 +139,7 @@
  .pio/libdeps/STM32F103RC_btt/TMCStepper/src/source/TMC2660_bitfields.h \
  Marlin/src/gcode/feature/trinamic/../../../feature/../module/planner.h \
  Marlin/src/gcode/feature/trinamic/../../../feature/../module/../gcode/queue.h \
+ Marlin/src/gcode/feature/trinamic/../../../feature/../module/../feature/fwretract.h \
  Marlin/src/gcode/feature/trinamic/../../../module/stepper/indirection.h \
  Marlin/src/gcode/feature/trinamic/../../../module/stepper/trinamic.h
 
@@ -419,6 +420,8 @@ Marlin/src/HAL/STM32F1/SPI.h:
 Marlin/src/gcode/feature/trinamic/../../../feature/../module/planner.h:
 
 Marlin/src/gcode/feature/trinamic/../../../feature/../module/../gcode/queue.h:
+
+Marlin/src/gcode/feature/trinamic/../../../feature/../module/../feature/fwretract.h:
 
 Marlin/src/gcode/feature/trinamic/../../../module/stepper/indirection.h:
 

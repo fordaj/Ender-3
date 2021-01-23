@@ -125,6 +125,7 @@
  Marlin/src/lcd/menu/../../module/../libs/duration_t.h \
  Marlin/src/lcd/menu/../../module/stepper.h \
  Marlin/src/lcd/menu/../../module/planner.h \
+ Marlin/src/lcd/menu/../../module/../feature/fwretract.h \
  Marlin/src/lcd/menu/../../module/stepper/indirection.h \
  Marlin/src/lcd/menu/../../module/stepper/trinamic.h \
  .pio/libdeps/STM32F103RC_btt/TMCStepper/src/TMCStepper.h \
@@ -402,6 +403,8 @@ Marlin/src/lcd/menu/../../module/../libs/duration_t.h:
 Marlin/src/lcd/menu/../../module/stepper.h:
 
 Marlin/src/lcd/menu/../../module/planner.h:
+
+Marlin/src/lcd/menu/../../module/../feature/fwretract.h:
 
 Marlin/src/lcd/menu/../../module/stepper/indirection.h:
 

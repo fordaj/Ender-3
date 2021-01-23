@@ -96,6 +96,7 @@
  Marlin/src/gcode/motion/../parser.h \
  Marlin/src/gcode/motion/../../module/motion.h \
  Marlin/src/gcode/motion/../../MarlinCore.h \
+ Marlin/src/gcode/motion/../../feature/fwretract.h \
  Marlin/src/gcode/motion/../../sd/cardreader.h \
  Marlin/src/gcode/motion/../../sd/SdFile.h \
  Marlin/src/gcode/motion/../../sd/SdBaseFile.h \
@@ -298,6 +299,8 @@ Marlin/src/gcode/motion/../parser.h:
 Marlin/src/gcode/motion/../../module/motion.h:
 
 Marlin/src/gcode/motion/../../MarlinCore.h:
+
+Marlin/src/gcode/motion/../../feature/fwretract.h:
 
 Marlin/src/gcode/motion/../../sd/cardreader.h:
 
