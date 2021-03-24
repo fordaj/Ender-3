@@ -592,9 +592,9 @@
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
   #if PRINTER_NUMBER == 1
     // 03-24-2020 15 cycles at 60C with 3mm borosilicate glass
-    #define DEFAULT_bedKp 24.40
-    #define DEFAULT_bedKi 4.06
-    #define DEFAULT_bedKd 97.82
+    #define DEFAULT_bedKp 113.83
+    #define DEFAULT_bedKi 21.51
+    #define DEFAULT_bedKd 401.51
   #elif PRINTER_NUMBER == 2 
     // 12-25-2020 15 cycles at 60C with 3mm borosilicate glass
     #define DEFAULT_bedKp 24.40
