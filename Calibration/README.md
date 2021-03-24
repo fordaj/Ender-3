@@ -24,6 +24,7 @@ PID auto-tuning for the bed can be run with an M304:
 ```gcode
 M303 E-1 S60 C15   ; Auto-tune PID values for bed with 5 cycles 0C to 60C
 ```
+Note: If this line of code produces an error "Bad extruder number!", it is likely that PID Bed Temp is not enabled in Marlin.
 After completion, be sure to copy the new values into Configuration.h. The values can be saved to the printer without rebuilding firmware:
 ```gcode
 M304 P99.85 I11.14 D596.73  ; Write new PID values to EEPROM
