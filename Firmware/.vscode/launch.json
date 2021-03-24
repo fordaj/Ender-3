@@ -1,5 +1,5 @@
 // AUTOMATICALLY GENERATED FILE. PLEASE DO NOT MODIFY IT MANUALLY
-
+//
 // PIO Unified Debugger
 //
 // Documentation: https://docs.platformio.org/page/plus/debugging.html
@@ -15,12 +15,12 @@
             "executable": "/Users/andyford/Vault/Repositories/Ender-3/Firmware/.pio/build/STM32F103RC_btt/firmware.elf",
             "projectEnvName": "STM32F103RC_btt",
             "toolchainBinDir": "/Users/andyford/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin",
+            "internalConsoleOptions": "openOnSessionStart",
             "svdPath": "/Users/andyford/.platformio/platforms/ststm32/misc/svd/STM32F103xx.svd",
             "preLaunchTask": {
                 "type": "PlatformIO",
                 "task": "Pre-Debug (STM32F103RC_btt)"
-            },
-            "internalConsoleOptions": "openOnSessionStart"
+            }
         },
         {
             "type": "platformio-debug",
@@ -29,8 +29,8 @@
             "executable": "/Users/andyford/Vault/Repositories/Ender-3/Firmware/.pio/build/STM32F103RC_btt/firmware.elf",
             "projectEnvName": "STM32F103RC_btt",
             "toolchainBinDir": "/Users/andyford/.platformio/packages/toolchain-gccarmnoneeabi@1.70201.0/bin",
-            "svdPath": "/Users/andyford/.platformio/platforms/ststm32/misc/svd/STM32F103xx.svd",
-            "internalConsoleOptions": "openOnSessionStart"
+            "internalConsoleOptions": "openOnSessionStart",
+            "svdPath": "/Users/andyford/.platformio/platforms/ststm32/misc/svd/STM32F103xx.svd"
         }
     ]
 }

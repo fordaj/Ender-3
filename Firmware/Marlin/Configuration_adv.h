@@ -2351,7 +2351,7 @@
 
   #if AXIS_IS_TMC(E0)
     #if PRINTER_NUMBER == 2
-      #define E0_CURRENT      900
+      #define E0_CURRENT      650
     #else
       #define E0_CURRENT      650
     #endif

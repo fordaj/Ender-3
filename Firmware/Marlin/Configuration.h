@@ -1,4 +1,4 @@
-#define PRINTER_NUMBER 2
+#define PRINTER_NUMBER 1
 /**
  * Marlin 3D Printer Firmware
  * Copyright (c) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -129,8 +129,14 @@
 //#define BLUETOOTH
 
 // Choose the name from boards.h that matches your setup
-#ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_BTT_SKR_MINI_E3_V1_2
+#if PRINTER_NUMBER == 1
+  #ifndef MOTHERBOARD
+    #define MOTHERBOARD BOARD_BTT_SKR_MINI_E3_V2_0
+  #endif
+#else
+  #ifndef MOTHERBOARD
+    #define MOTHERBOARD BOARD_BTT_SKR_MINI_E3_V1_2
+  #endif
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
@@ -520,7 +526,12 @@
     #define DEFAULT_Ki_LIST {   1.54,   1.54 }
     #define DEFAULT_Kd_LIST {  76.55,  76.55 }
   #else
-    #if PRINTER_NUMBER == 2
+    #if PRINTER_NUMBER == 1
+      // 03-24-2021 E3D Hemera, 1.2mm E3D nozzle, Winsinn sock, Hemera Fan @ 260C for 15 cycles
+      #define DEFAULT_Kp 30.64
+      #define DEFAULT_Ki 3.16
+      #define DEFAULT_Kd 74.30
+    #elif PRINTER_NUMBER == 2
       // 01-22-2021 E3D Hemera, 0.4mm E3D nozzle, E3D sock, Hemera Fan @ 210C for 15 cycles
       #define DEFAULT_Kp 23.52
       #define DEFAULT_Ki 1.81
@@ -575,8 +586,12 @@
 #if ENABLED(PIDTEMPBED)
   //#define MIN_BED_POWER 0
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
-
-  #if PRINTER_NUMBER == 2 
+  #if PRINTER_NUMBER == 1
+    // 03-24-2020 15 cycles at 60C with 3mm borosilicate glass
+    #define DEFAULT_bedKp 24.40
+    #define DEFAULT_bedKi 4.06
+    #define DEFAULT_bedKd 97.82
+  #elif PRINTER_NUMBER == 2 
     // 12-25-2020 15 cycles at 60C with 3mm borosilicate glass
     #define DEFAULT_bedKp 24.40
     #define DEFAULT_bedKi 4.06
@@ -795,8 +810,12 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#if PRINTER_NUMBER == 2
-  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 397}  // 01/22/2020: E3D Hemera (Direct Drive 1.75mm 24V)
+#if PRINTER_NUMBER == 1
+  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 360}  // 03/24/2020: E3D Hemera (Direct Drive 1.75mm 24V)
+#elif PRINTER_NUMBER == 2
+  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 360}  // 01/27/2020: E3D Hemera (Direct Drive 1.75mm 24V)
+#elif PRINTER_NUMBER == 4
+  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 360}  // 01/27/2020: E3D Hemera (Direct Drive 1.75mm 24V)
 #else
   #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
 #endif
@@ -819,7 +838,11 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#if PRINTER_NUMBER == 2
+#if PRINTER_NUMBER == 1
+  #define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 5000 }   //Hemera with V6 Hotend
+#elif PRINTER_NUMBER == 2
+  #define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 5000 }   //Hemera with V6 Hotend
+#elif PRINTER_NUMBER == 4
   #define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 5000 }   //Hemera with V6 Hotend
 #else
   //#define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 5000 }
@@ -906,6 +929,8 @@
 
 // Force the use of the probe for Z-axis homing
 #if PRINTER_NUMBER == 2
+  //#define USE_PROBE_FOR_Z_HOMING
+#elif PRINTER_NUMBER == 4
   //#define USE_PROBE_FOR_Z_HOMING
 #else
   //#define USE_PROBE_FOR_Z_HOMING
@@ -1500,7 +1525,9 @@
 // - Prevent Z homing when the Z probe is outside bed area.
 //
 #if PRINTER_NUMBER == 2
-  #define Z_SAFE_HOMING
+  //#define Z_SAFE_HOMING
+#elif PRINTER_NUMBER == 4
+  //#define Z_SAFE_HOMING
 #else
   //#define Z_SAFE_HOMING
 #endif
