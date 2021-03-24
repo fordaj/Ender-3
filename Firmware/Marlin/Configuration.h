@@ -1222,7 +1222,9 @@
 //#define Z_HOMING_HEIGHT  4      // (mm) Minimal Z height before homing (G28) for Z clearance above the bed, clamps, ...
                                   // Be sure to have this much clearance over your Z_MAX_POS to prevent grinding.
 
-#if PRINTER_NUMBER == 2
+#if PRINTER_NUMBER == 1
+  #define Z_AFTER_HOMING  10      // (mm) Height to move to after homing Z
+#elif PRINTER_NUMBER == 2
   #define Z_AFTER_HOMING  10      // (mm) Height to move to after homing Z
 #elif PRINTER_NUMBER == 3
   #define Z_AFTER_HOMING  10      // (mm) Height to move to after homing Z
