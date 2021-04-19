@@ -2004,7 +2004,7 @@
  *
  * Note that M207 / M208 / M209 settings are saved to EEPROM.
  */
-#if PRINTER_NUMBER == 2
+#if PRINTER_NUMBER == 1
   #define FWRETRACT
 #else
   //#define FWRETRACT
@@ -2015,7 +2015,7 @@
     #define MIN_AUTORETRACT 0.1           // (mm) Don't convert E moves under this length
     #define MAX_AUTORETRACT 10.0          // (mm) Don't convert E moves over this length
   #endif
-  #if PRINTER_NUMBER == 2                 // Hemera
+  #if PRINTER_NUMBER == 1                 // Hemera
     #define RETRACT_LENGTH 0.5              // (mm) Default retract length (positive value)
     #define RETRACT_LENGTH_SWAP 13          // (mm) Default swap retract length (positive value)
     #define RETRACT_FEEDRATE 45             // (mm/s) Default feedrate for retracting
