@@ -817,7 +817,7 @@
 #if PRINTER_NUMBER == 1
   #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 360}  // 03/24/2020: E3D Hemera (Direct Drive 1.75mm 24V)
 #elif PRINTER_NUMBER == 2
-  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 360}  // 01/27/2020: E3D Hemera (Direct Drive 1.75mm 24V)
+  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 330}  // 01/27/2020: E3D Hemera (Direct Drive 1.75mm 24V)
 #elif PRINTER_NUMBER == 4
   #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 360}  // 01/27/2020: E3D Hemera (Direct Drive 1.75mm 24V)
 #else
@@ -929,11 +929,11 @@
  * The probe replaces the Z-MIN endstop and is used for Z homing.
  * (Automatically enables USE_PROBE_FOR_Z_HOMING.)
  */
-//#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
 // Force the use of the probe for Z-axis homing
-#if PRINTER_NUMBER == 2
-  //#define USE_PROBE_FOR_Z_HOMING
+#if PRINTER_NUMBER == 1
+  #define USE_PROBE_FOR_Z_HOMING
 #elif PRINTER_NUMBER == 4
   //#define USE_PROBE_FOR_Z_HOMING
 #else
@@ -955,11 +955,11 @@
  *      - normally-closed switches to GND and D32.
  *      - normally-open switches to 5V and D32.
  */
-//#if PRINTER_NUMBER == 2
-  //#define Z_MIN_PROBE_PIN PC12 // Using PT-DET pin for IR probe
-//#else
+#if PRINTER_NUMBER == 1
+  //#define Z_MIN_PROBE_PIN PC15 // Using E0-STOP pin for IR probe
+#else
   //#define Z_MIN_PROBE_PIN 32 // Pin 32 is the RAMPS default
-//#endif
+#endif
 
 /**
  * Probe Type
@@ -986,8 +986,8 @@
  * A Fix-Mounted Probe either doesn't deploy or needs manual deployment.
  *   (e.g., an inductive probe or a nozzle-based probe-switch.)
  */
-#if PRINTER_NUMBER == 2
-  //#define FIX_MOUNTED_PROBE
+#if PRINTER_NUMBER == 1
+  #define FIX_MOUNTED_PROBE
 #else
   //#define FIX_MOUNTED_PROBE
 #endif
@@ -1095,9 +1095,9 @@
  *     O-- FRONT --+
  */
 
-//#if PRINTER_NUMBER == 2
-  //#define NOZZLE_TO_PROBE_OFFSET { 4, 34, -2.5 }    // IR Probe on Satsana Remix
-#if PRINTER_NUMBER == 3
+#if PRINTER_NUMBER == 1
+  #define NOZZLE_TO_PROBE_OFFSET { -39, 14, -1.5 }    // IR Probe on Hemera
+#elif PRINTER_NUMBER == 3
   #define NOZZLE_TO_PROBE_OFFSET { -39.5, -7.2, -2.625 }    // BLTouch Clone
 #else
   #define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
@@ -1105,7 +1105,11 @@
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define PROBING_MARGIN 10
+#if PRINTER_NUMBER == 1
+  #define PROBING_MARGIN 50
+#else
+  #define PROBING_MARGIN 10
+#endif
 
 // X and Y axis travel speed (mm/min) between probes
 #define XY_PROBE_SPEED (133*60)
@@ -1357,7 +1361,7 @@
  */
 
 #if PRINTER_NUMBER == 1
-  #define MESH_BED_LEVELING         // Manual bed leveling
+  #define AUTO_BED_LEVELING_3POINT  // For flat bed
 #elif PRINTER_NUMBER == 2
   //#define AUTO_BED_LEVELING_BILINEAR // Bilinear bed leveling
   #define MESH_BED_LEVELING         // Manual bed leveling
@@ -1498,6 +1502,7 @@
 #define LEVEL_BED_CORNERS
 
 #if ENABLED(LEVEL_BED_CORNERS)
+
   #define LEVEL_CORNERS_INSET_LFRB { 30, 30, 30, 30 } // (mm) Left, Front, Right, Back insets
   #define LEVEL_CORNERS_HEIGHT      0.0   // (mm) Z height of nozzle at leveling points
   #define LEVEL_CORNERS_Z_HOP       4.0   // (mm) Z height of nozzle between leveling points
@@ -1530,8 +1535,8 @@
 // - Move the Z probe (or nozzle) to a defined XY point before Z Homing.
 // - Prevent Z homing when the Z probe is outside bed area.
 //
-#if PRINTER_NUMBER == 2
-  //#define Z_SAFE_HOMING
+#if PRINTER_NUMBER == 1
+  #define Z_SAFE_HOMING
 #elif PRINTER_NUMBER == 4
   //#define Z_SAFE_HOMING
 #else
