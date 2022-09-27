@@ -24,7 +24,7 @@
 
 #if PRINTER_NUMBER == 1
   #define CONFIG_EXAMPLES_DIR "Creality/Ender-3/BigTreeTech SKR Mini E3 2.0"
-#elif
+#else
   #define CONFIG_EXAMPLES_DIR "Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 1.2"
 #endif
 
@@ -439,16 +439,8 @@
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  */
 
-// Stock Ender 3 Pro Thermistor: 1
-// E3D Thermistor: 5
-#if PRINTER_NUMBER == 1
-  #define TEMP_SENSOR_0 1   // Stock thermistor
-#elif PRINTER_NUMBER == 2
+#if PRINTER_NUMBER == 2
   #define TEMP_SENSOR_0 5   // E3D Thermistor
-#elif PRINTER_NUMBER == 3
-  #define TEMP_SENSOR_0 1   // Stock thermistor
-#elif PRINTER_NUMBER == 4
-  #define TEMP_SENSOR_0 1   // Stock thermistor
 #else
   #define TEMP_SENSOR_0 1   // Default thermistor
 #endif
@@ -541,15 +533,15 @@
       #define DEFAULT_Ki 1.81
       #define DEFAULT_Kd 76.37
     #elif PRINTER_NUMBER == 3
-      // 01-08-2021 Winsin volcano block, 1.2mm E3D nozzle, sock clone, Satsana fan shroud @ 260C for 15 cycles
-      #define DEFAULT_Kp 32.38
-      #define DEFAULT_Ki 3.54
-      #define DEFAULT_Kd 73.98
+      // 04-25-2021 Winsin volcano block, 1.2mm E3D nozzle, sock clone, Hemera @ 260C for 15 cycles
+      #define DEFAULT_Kp 32.21
+      #define DEFAULT_Ki 3.59
+      #define DEFAULT_Kd 72.29
     #elif PRINTER_NUMBER == 4
-      // 12-25-2020 Winsinn volcano block, 1.2mm E3D nozzle, Winsinn sock, stock fan setup @ 260C for 15 cycles
-      #define DEFAULT_Kp 34.51
-      #define DEFAULT_Ki 4.10
-      #define DEFAULT_Kd 72.63
+      // 04-25-2021 Winsinn volcano block, 1.2mm E3D nozzle, Winsinn sock, Hemera @ 260C for 15 cycles
+      #define DEFAULT_Kp 32.70
+      #define DEFAULT_Ki 3.71
+      #define DEFAULT_Kd 72.08
     #else
       #define DEFAULT_Kp  21.73
       #define DEFAULT_Ki   1.54
@@ -815,11 +807,13 @@
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
 #if PRINTER_NUMBER == 1
-  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 360}  // 03/24/2020: E3D Hemera (Direct Drive 1.75mm 24V)
+  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 360}  // 03/24/2021: E3D Hemera (Direct Drive 1.75mm 24V)
 #elif PRINTER_NUMBER == 2
-  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 330}  // 01/27/2020: E3D Hemera (Direct Drive 1.75mm 24V)
+  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 81, 81, 401, 360}  // 01/27/2021: E3D Hemera (Direct Drive 1.75mm 24V)
+#elif PRINTER_NUMBER == 3
+  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 81, 81, 405, 360}  // 04/25/2021: E3D Hemera (Direct Drive 1.75mm 24V)
 #elif PRINTER_NUMBER == 4
-  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 360}  // 01/27/2020: E3D Hemera (Direct Drive 1.75mm 24V)
+  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 360}  // 01/27/2021: E3D Hemera (Direct Drive 1.75mm 24V)
 #else
   #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
 #endif
@@ -846,8 +840,8 @@
   #define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 5000 }   //Hemera with V6 Hotend
 #elif PRINTER_NUMBER == 2
   #define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 5000 }   //Hemera with V6 Hotend
-#elif PRINTER_NUMBER == 4
-  #define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 5000 }   //Hemera with V6 Hotend
+#elif PRINTER_NUMBER == 3 || PRINTER_NUMBER == 4
+  #define DEFAULT_MAX_ACCELERATION      { 1000, 1000, 1000, 5000 }   //Hemera with V6 Hotend
 #else
   //#define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 5000 }
 #endif
@@ -932,10 +926,8 @@
 #define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
 // Force the use of the probe for Z-axis homing
-#if PRINTER_NUMBER == 1
+#if PRINTER_NUMBER == 1 || PRINTER_NUMBER == 3 || PRINTER_NUMBER == 4
   #define USE_PROBE_FOR_Z_HOMING
-#elif PRINTER_NUMBER == 4
-  //#define USE_PROBE_FOR_Z_HOMING
 #else
   //#define USE_PROBE_FOR_Z_HOMING
 #endif
@@ -986,7 +978,7 @@
  * A Fix-Mounted Probe either doesn't deploy or needs manual deployment.
  *   (e.g., an inductive probe or a nozzle-based probe-switch.)
  */
-#if PRINTER_NUMBER == 1
+#if PRINTER_NUMBER == 1 || PRINTER_NUMBER == 3 || PRINTER_NUMBER == 4
   #define FIX_MOUNTED_PROBE
 #else
   //#define FIX_MOUNTED_PROBE
@@ -1096,16 +1088,18 @@
  */
 
 #if PRINTER_NUMBER == 1
-  #define NOZZLE_TO_PROBE_OFFSET { -39, 14, -1.5 }    // IR Probe on Hemera
+  #define NOZZLE_TO_PROBE_OFFSET { -39, 14, -1.0 }    // IR Probe on Hemera
 #elif PRINTER_NUMBER == 3
-  #define NOZZLE_TO_PROBE_OFFSET { -39.5, -7.2, -2.625 }    // BLTouch Clone
+  #define NOZZLE_TO_PROBE_OFFSET { -39, 14, -1.2 }    // IR Probe on Hemera
+#elif PRINTER_NUMBER == 4
+  #define NOZZLE_TO_PROBE_OFFSET { -39, 14, -0.3 }    // IR Probe on Hemera
 #else
   #define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
 #endif
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#if PRINTER_NUMBER == 1
+#if PRINTER_NUMBER == 1 || PRINTER_NUMBER == 3 || PRINTER_NUMBER == 4
   #define PROBING_MARGIN 50
 #else
   #define PROBING_MARGIN 10
@@ -1129,8 +1123,14 @@
  * A total of 2 does fast/slow probes with a weighted average.
  * A total of 3 or more adds more slow probes, taking the average.
  */
-//#define MULTIPLE_PROBING 2
-//#define EXTRA_PROBING    1
+
+#if PRINTER_NUMBER == 1 || PRINTER_NUMBER == 3 || PRINTER_NUMBER == 4
+  #define MULTIPLE_PROBING 2
+  #define EXTRA_PROBING    1
+#else
+  //#define MULTIPLE_PROBING 2
+  //#define EXTRA_PROBING    1
+#endif
 
 /**
  * Z probes require clearance when deploying, stowing, and moving between
@@ -1230,13 +1230,9 @@
 //#define Z_HOMING_HEIGHT  4      // (mm) Minimal Z height before homing (G28) for Z clearance above the bed, clamps, ...
                                   // Be sure to have this much clearance over your Z_MAX_POS to prevent grinding.
 
-#if PRINTER_NUMBER == 1
+#if PRINTER_NUMBER == 1 || PRINTER_NUMBER == 2 || PRINTER_NUMBER == 3 || PRINTER_NUMBER == 4
   #define Z_AFTER_HOMING  10      // (mm) Height to move to after homing Z
-#elif PRINTER_NUMBER == 2
-  #define Z_AFTER_HOMING  10      // (mm) Height to move to after homing Z
-#elif PRINTER_NUMBER == 3
-  #define Z_AFTER_HOMING  10      // (mm) Height to move to after homing Z
-#elif PRINTER_NUMBER == 4
+#else
   #define Z_AFTER_HOMING  10      // (mm) Height to move to after homing Z
 #endif
 
@@ -1360,15 +1356,8 @@
  *   With an LCD controller the process is guided step-by-step.
  */
 
-#if PRINTER_NUMBER == 1
+#if PRINTER_NUMBER == 1 || PRINTER_NUMBER == 3 || PRINTER_NUMBER == 4
   #define AUTO_BED_LEVELING_3POINT  // For flat bed
-#elif PRINTER_NUMBER == 2
-  //#define AUTO_BED_LEVELING_BILINEAR // Bilinear bed leveling
-  #define MESH_BED_LEVELING         // Manual bed leveling
-#elif PRINTER_NUMBER == 3
-  #define MESH_BED_LEVELING         // Manual bed leveling
-#elif PRINTER_NUMBER == 4
-  #define MESH_BED_LEVELING         // Manual bed leveling
 #else
   //#define AUTO_BED_LEVELING_3POINT
   //#define AUTO_BED_LEVELING_LINEAR
@@ -1486,10 +1475,8 @@
  */
 #if PRINTER_NUMBER == 2
   #define LCD_BED_LEVELING
-#elif PRINTER_NUMBER == 3
-  #define LCD_BED_LEVELING
-#elif PRINTER_NUMBER == 4
-  #define LCD_BED_LEVELING
+#else
+  //#define LCD_BED_LEVELING
 #endif
 
 #if ENABLED(LCD_BED_LEVELING)
@@ -1535,10 +1522,8 @@
 // - Move the Z probe (or nozzle) to a defined XY point before Z Homing.
 // - Prevent Z homing when the Z probe is outside bed area.
 //
-#if PRINTER_NUMBER == 1
+#if PRINTER_NUMBER == 1 || PRINTER_NUMBER == 3 || PRINTER_NUMBER == 4
   #define Z_SAFE_HOMING
-#elif PRINTER_NUMBER == 4
-  //#define Z_SAFE_HOMING
 #else
   //#define Z_SAFE_HOMING
 #endif
@@ -1695,7 +1680,7 @@
 
 #if ENABLED(NOZZLE_PARK_FEATURE)
   // Specify a park position as { X, Y, Z_raise }
-  #define NOZZLE_PARK_POINT { (X_MIN_POS + 10), (Y_MAX_POS - 10), 20 }
+  #define NOZZLE_PARK_POINT { (X_MIN_POS + 180), (0), 40 } //#define NOZZLE_PARK_POINT { (X_MIN_POS + 10), (Y_MAX_POS - 10), 20 }
   //#define NOZZLE_PARK_X_ONLY          // X move only is required to park
   //#define NOZZLE_PARK_Y_ONLY          // Y move only is required to park
   #define NOZZLE_PARK_Z_RAISE_MIN   2   // (mm) Always raise Z by at least this distance
